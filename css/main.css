@@ -1,251 +1,238 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+/* Welcome to Compass.
+ * In this file you should centralize your imports
+ */
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,900);
-@import url(https://fonts.googleapis.com/css?family=Raleway:200);
-
+/* line 20, ../scss/defaults.scss */
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
-}
+  color: #222; }
 
+/* line 24, ../scss/defaults.scss */
 html {
-    font-size: 1em;
-    line-height: 1.4;
-}
+  font-size: 1em;
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
+/* line 35, ../scss/defaults.scss */
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
+/* line 40, ../scss/defaults.scss */
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
  */
-
+/* line 49, ../scss/defaults.scss */
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-
+/* line 66, ../scss/defaults.scss */
 audio,
 canvas,
 img,
 video {
-    vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-
+/* line 74, ../scss/defaults.scss */
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-
+/* line 84, ../scss/defaults.scss */
 textarea {
-    resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-
+/* line 92, ../scss/defaults.scss */
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
 
 /* ==========================================================================
-   Author's custom styles
+   Mobile first styles (loaded by all browsers)
    ========================================================================== */
-
+/* line 5, ../scss/small.scss */
 body {
-    font-family: 'Raleway', sans-serif;
-}
+  font-family: 'Raleway', sans-serif; }
 
+/* line 9, ../scss/small.scss */
 .header {
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    background: url("../img/bg.png");
-}
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  background: url("../img/bg.png"); }
 
+/* line 16, ../scss/small.scss */
 h1 {
-    width: 600px;
-    position: absolute;
-    left: 50%;
-    margin-left: -300px;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 150px;
-    text-align: center;
-}
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 150px;
+  text-align: center; }
 
+/* line 26, ../scss/small.scss */
 h1 a {
-    text-decoration: none;
-    color: #f4860f;
-}
+  text-decoration: none;
+  color: #f4860f; }
 
+/* line 31, ../scss/small.scss */
 .navigation {
-    width: 100%;
-    height: 100px;
-    background-color: #bcbcbc;
-}
+  width: 100%;
+  height: 100px;
+  background-color: #bcbcbc; }
 
+/* line 37, ../scss/small.scss */
 .navigation ul {
-    position: absolute;
-    padding: 0px;
-    padding-top: 30px;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
+  position: absolute;
+  padding: 0px;
+  padding-top: 30px;
+  margin: 0;
+  width: 100%;
+  text-align: center; }
 
+/* line 46, ../scss/small.scss */
 .navigation li {
-    display: inline;
-    margin: 15px;
-    font-size: 20px;
-    font-weight: bold;
-}
+  display: inline;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold; }
 
+/* line 53, ../scss/small.scss */
 .navigation a {
-    text-decoration: none;
-    color: black;
-}
+  text-decoration: none;
+  color: black; }
+
+/* line 57, ../scss/small.scss */
 .navigation a:hover {
-    color: gray;
-}
+  color: gray; }
 
+/* line 61, ../scss/small.scss */
 .content {
-    width: 600px;
-    margin: 50px auto;
-    text-align: justify;
-}
+  width: 600px;
+  margin: 50px auto;
+  text-align: justify; }
 
+/* line 67, ../scss/small.scss */
 .footer {
-    background-color: #c7c7c7;
-    min-height: 400px;
-}
+  background-color: #c7c7c7;
+  min-height: 400px; }
 
+/* line 72, ../scss/small.scss */
 .footer-container {
-    width: 600px;
-    margin: 0px auto;
-}
+  width: 600px;
+  margin: 0px auto; }
 
+/* line 77, ../scss/small.scss */
 .yhdistys-logo {
-    padding: 40px;
-    display: inline-block;
-}
+  padding: 40px;
+  display: inline-block; }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Image replacement
  */
-
+/* line 9, ../scss/helper-classes.scss */
 .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
 
+/* line 17, ../scss/helper-classes.scss */
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-
+/* line 28, ../scss/helper-classes.scss */
 .hidden {
-    display: none !important;
-    visibility: hidden;
-}
+  display: none !important;
+  visibility: hidden; }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-
+/* line 37, ../scss/helper-classes.scss */
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-
+/* line 54, ../scss/helper-classes.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-
+/* line 67, ../scss/helper-classes.scss */
 .invisible {
-    visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -258,111 +245,92 @@ h1 a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
+/* line 84, ../scss/helper-classes.scss */
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
 
+/* line 89, ../scss/helper-classes.scss */
 .clearfix:after {
-    clear: both;
-}
+  clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-
+/* line 98, ../scss/helper-classes.scss */
 .clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+  *zoom: 1; }
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  /* line 7, ../scss/print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  /* line 15, ../scss/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  /* line 19, ../scss/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  /* line 23, ../scss/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 33, ../scss/print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+  /* line 38, ../scss/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  /* line 43, ../scss/print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+  /* line 48, ../scss/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  /* line 52, ../scss/print.scss */
+  img {
+    max-width: 100% !important; }
 
-    img {
-        max-width: 100% !important;
-    }
+  @page {
+    margin: 0.5cm; }
 
-    @page {
-        margin: 0.5cm;
-    }
+  /* line 62, ../scss/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+  /* line 68, ../scss/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }

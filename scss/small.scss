@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Mobile first styles (loaded by all browsers)
+   ========================================================================== */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    background: url("../img/bg.png");
+}
+
+h1 {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 150px;
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #f4860f;
+}
+
+.navigation {
+    width: 100%;
+    height: 100px;
+    background-color: #bcbcbc;
+}
+
+.navigation ul {
+    position: absolute;
+    padding: 0px;
+    padding-top: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+.navigation a:hover {
+    color: gray;
+}
+
+.content {
+    width: 600px;
+    margin: 50px auto;
+    text-align: justify;
+}
+
+.footer {
+    background-color: #c7c7c7;
+    min-height: 400px;
+}
+
+.footer-container {
+    width: 600px;
+    margin: 0px auto;
+}
+
+.yhdistys-logo {
+    padding: 40px;
+    display: inline-block;
+}

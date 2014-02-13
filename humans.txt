@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Joonas Salovaara -- developer -- @sarukuku
+    Roope Merikukka -- developer -- @roopemerikukka
 
 # THANKS
 
-    <name>
+    Everyone organizing Synergia Turku!
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+	GitHub
+    HTML5, CSS3, SASS, Compass
     Normalize.css, jQuery, Modernizr

@@ -1,0 +1,13 @@
+/* Welcome to Compass.
+ * In this file you should centralize your imports
+ */
+
+// Import reasonable defaults.
+@import "defaults";
+// Import mobile first styles.
+@import "small";
+// Import helper classes like clearfix etc.
+@import "helper-classes";
+// Import print styles.
+@import "print";
+
