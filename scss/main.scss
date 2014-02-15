@@ -2,10 +2,18 @@
  * In this file you should centralize your imports
  */
 
+// Import compass ccs3 helpers.
+@import "compass/css3";
 // Import reasonable defaults.
 @import "defaults";
+// Import base typography.
+@import "typography";
+// Import Responsive navigation styles.
+@import "responsive-nav.scss";
 // Import mobile first styles.
 @import "small";
+// Responsive tables
+@import "responsive-tables";
 // Import helper classes like clearfix etc.
 @import "helper-classes";
 // Import print styles.
