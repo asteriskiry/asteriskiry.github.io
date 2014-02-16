@@ -368,6 +368,54 @@ img {
   width: 100%;
   height: 600px; }
 
+/* line 199, ../scss/small.scss */
+footer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid black;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #476481), color-stop(100%, #1a242f));
+  background: -webkit-linear-gradient(#476481, #1a242f);
+  background: -moz-linear-gradient(#476481, #1a242f);
+  background: -o-linear-gradient(#476481, #1a242f);
+  background: linear-gradient(#476481, #1a242f); }
+  /* line 206, ../scss/small.scss */
+  footer span {
+    display: table-cell; }
+    /* line 209, ../scss/small.scss */
+    footer span img {
+      padding: 20%; }
+
+@media screen and (max-width: 640px) {
+  /* line 217, ../scss/small.scss */
+  .opening-view .headline {
+    font-size: 70%; }
+
+  /* line 224, ../scss/small.scss */
+  .column.full,
+  .column.two-thirds,
+  .column.half {
+    float: none;
+    margin: 0;
+    width: 100%; }
+
+  /* line 230, ../scss/small.scss */
+  .locations #map {
+    height: 300px; } }
+@media screen and (max-width: 1100px) {
+  /* line 236, ../scss/small.scss */
+  .column.one-third {
+    float: none;
+    margin: 0;
+    width: 100%; }
+
+  /* line 242, ../scss/small.scss */
+  .speakers .one-third .profile-photo {
+    width: 20%; }
+
+  /* line 246, ../scss/small.scss */
+  .speakers .one-third .text-content {
+    padding: 0 0 10% 25%; } }
 /* Foundation v2.1.4 http://foundation.zurb.com */
 /* Artfully masterminded by ZURB  */
 /* -------------------------------------------------- 

@@ -195,3 +195,55 @@ img {
     height: 600px;
   }
 }
+
+footer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px solid black;
+  @include background(linear-gradient(lighten($midnight-blue, 15%), darken($midnight-blue, 10%)));
+
+  span {
+    display: table-cell;
+
+    img {
+      padding: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .opening-view {
+    .headline {
+      font-size: 70%;
+    }
+  }
+
+  .column.full,
+  .column.two-thirds,
+  .column.half {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .locations #map {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .column.one-third {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .speakers .one-third .profile-photo {
+    width: 20%;
+  }
+
+  .speakers .one-third .text-content {
+    padding: 0 0 10% 25%;
+  }
+}
