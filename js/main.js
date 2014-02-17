@@ -27,7 +27,8 @@ function SynergiaSite() {
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
                 zoom: 11,
-
+                // Disable scroll wheel to prevent map zoom while scrolling the page.
+                scrollwheel: false,
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(60.4500, 22.2667), // New York
 
