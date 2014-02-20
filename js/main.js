@@ -2,6 +2,7 @@ function SynergiaSite() {
 
 	// SELECT ONCE
 	var variables = {
+        body: $("body"),
 		nav: $(".nav")
 	};
 
@@ -68,7 +69,12 @@ function SynergiaSite() {
         variables.nav.find("a").each(function() {
             $(this).click(function(e) {
                 e.preventDefault();
-                scrollToElement(this.hash, 200, -80);
+                if (this.hash !== "") {
+                    scrollToElement(this.hash, 200, -80);
+                } else {
+                    scrollToElement(variables.body, 200, 0);
+                }
+
             });
         });
     }
