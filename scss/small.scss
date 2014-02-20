@@ -4,6 +4,7 @@
 
 // Colors
 $midnight-blue: #2c3e50;
+$body-gray: #efefef;
 
 html {
   width: 100%;
@@ -13,7 +14,7 @@ html {
 body {
   min-width: 100%;
   min-height: 100%;
-  background-color: #efefef;
+  background-color: $body-gray;
 }
 
 // Basic responsive images
@@ -93,10 +94,11 @@ img {
 
   ul {
     margin: 0;
-    padding: 0;
+    padding: 0 57px 0 0;
     display: table;
     table-layout: fixed;
     width: 100%;
+    background-color: $body-gray;
 
     li {
       display: table-cell;
@@ -120,6 +122,14 @@ img {
       }
     }
 
+    img.logo {
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      height: 51px;
+      width: auto;
+    }
+
     a {
       text-decoration: none;
       font-family: 'Fjalla One', sans-serif;
@@ -131,10 +141,11 @@ img {
       @include transition-property(background-color, color, text-shadow);
       @include transition-duration(0.2s);
       @include transition-timing-function(ease-in-out);
+      @include box-shadow(inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5));
     }
 
-    a:hover {
-      background-color: tint($midnight-blue, 20%) !important;
+    a:nth-child(n):hover {
+      background-color: tint($midnight-blue, 20%);
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     }
   }
@@ -142,9 +153,10 @@ img {
 
 .container {
   section, hr {
-    width: 90%;
+    width: 100%;
+    padding: 0 57px;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
 
   h2 {
@@ -215,7 +227,13 @@ footer {
 @media screen and (max-width: 640px) {
   .opening-view {
     .headline {
-      font-size: 70%;
+      font-size: 60%;
+    }
+  }
+
+  .container {
+    section, hr {
+      padding: 0 39px;
     }
   }
 
@@ -225,6 +243,21 @@ footer {
     float: none;
     margin: 0;
     width: 100%;
+  }
+
+  .nav {
+
+    ul {
+      padding: 0 37px 0 0;
+
+      img.logo {
+        height: 31px;
+      }
+
+      a {
+        padding: 5px 0;
+      }
+    }
   }
 
   .locations #map {

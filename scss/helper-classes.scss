@@ -98,3 +98,14 @@
 .clearfix {
     *zoom: 1;
 }
+
+.no-box-shadow {
+    box-shadow: none !important;
+    background-color: transparent !important;
+
+    &:hover,
+    &:active {
+        box-shadow: none !important;
+        background-color: transparent !important;
+    }
+}
