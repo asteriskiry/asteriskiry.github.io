@@ -30,6 +30,8 @@ function SynergiaSite() {
                 zoom: 15,
                 // Disable scroll wheel to prevent map zoom while scrolling the page.
                 scrollwheel: false,
+                // Disable map type selection
+                mapTypeControl: false,
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(60.4541253,22.2917672), // Turku
                 // How you would like to style the map.
