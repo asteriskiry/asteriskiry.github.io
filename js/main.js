@@ -68,21 +68,44 @@ function SynergiaSite() {
             // Create the Google Map using out element and options defined above
             var map = new google.maps.Map(mapElement, mapOptions);
 
+            var MapMarkerImage = new google.maps.MarkerImage('img/mapmarker.png');
+
             // Map markers for places
             var uusisMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(60.4562776,22.292009),
                 map: map,
-                title: 'Uusi-S'
+                title: 'Uusi-S',
+                icon: MapMarkerImage
             });
             var ictMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(60.4490542,22.295841),
                 map: map,
-                title: 'ICT-talo'
+                title: 'ICT-talo',
+                icon: MapMarkerImage
             });
             var proffaMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(60.454436,22.287984),
                 map: map,
-                title: 'Proffan Kellari'
+                title: 'Proffan Kellari',
+                icon: MapMarkerImage
+            });
+            var uusisInfowindow = new google.maps.InfoWindow({
+                    content: '<p><b>Uusi-S</b><br />Sauna, Lemminkäisenkierros ja jatkobileet</p>'
+                });
+            var ictInfowindow = new google.maps.InfoWindow({
+                    content: '<p><b>ICT-talo</b><br />Seminaariluennot</p>'
+                });
+            var proffaInfowindow = new google.maps.InfoWindow({
+                    content: '<p><b>Proffan Kellari</b><br />Tikkakisa</p>'
+                });
+            google.maps.event.addListener(uusisMarker, 'click', function() {
+                uusisInfowindow.open(map, uusisMarker);
+            });
+            google.maps.event.addListener(ictMarker, 'click', function() {
+                ictInfowindow.open(map, ictMarker);
+            });
+            google.maps.event.addListener(proffaMarker, 'click', function() {
+                proffaInfowindow.open(map, proffaMarker);
             });
 
         }
