@@ -27,7 +27,7 @@ function SynergiaSite() {
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
-                zoom: 15,
+                zoom: 14,
                 // Disable scroll wheel to prevent map zoom while scrolling the page.
                 scrollwheel: false,
                 // The latitude and longitude to center the map (always required)
@@ -84,7 +84,7 @@ function SynergiaSite() {
                 map: map,
                 title: 'Proffan Kellari'
             });
-            
+
         }
 	}
 
