@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,900);
-@import url(https://fonts.googleapis.com/css?family=Raleway:200);
 /* Welcome to Compass.
  * In this file you should centralize your imports
  */
@@ -12,7 +10,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 20, ../scss/defaults.scss */
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+/* line 16, ../scss/defaults.scss */
 html,
 button,
 input,
@@ -56,7 +56,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 66, ../scss/defaults.scss */
+/* line 63, ../scss/defaults.scss */
 audio,
 canvas,
 img,
@@ -108,7 +108,7 @@ body {
   line-height: 1.5;
   color: #333; }
 
-/* line 13, ../scss/typography.scss */
+/* line 12, ../scss/typography.scss */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -171,7 +171,7 @@ th {
 
 /* line 33, ../scss/responsive-nav.scss */
 .nav-toggle {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -218,11 +218,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.9))), url('../img/fp-bg-blurry.jpg?1392469083');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -319,20 +318,20 @@ img {
       height: 100%;
       color: white;
       padding: 15px 0;
-      -webkit-transition-property: background-color, color, text-shadow;
       -moz-transition-property: background-color, color, text-shadow;
       -o-transition-property: background-color, color, text-shadow;
+      -webkit-transition-property: background-color, color, text-shadow;
       transition-property: background-color, color, text-shadow;
-      -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
       transition-duration: 0.2s;
-      -webkit-transition-timing-function: ease-in-out;
       -moz-transition-timing-function: ease-in-out;
       -o-transition-timing-function: ease-in-out;
+      -webkit-transition-timing-function: ease-in-out;
       transition-timing-function: ease-in-out;
-      -webkit-box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5);
       -moz-box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5);
+      -webkit-box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5);
       box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5); }
     /* line 147, ../scss/small.scss */
     .nav ul a:nth-child(n):hover {
@@ -379,35 +378,37 @@ img {
 .locations #map {
   width: 100%;
   height: 600px; }
+/* line 209, ../scss/small.scss */
+.locations #map img {
+  max-width: none; }
 
-/* line 211, ../scss/small.scss */
+/* line 214, ../scss/small.scss */
 footer {
   display: table;
   table-layout: fixed;
   width: 100%;
   border-top: 1px solid black;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #476481), color-stop(100%, #1a242f));
-  background: -webkit-linear-gradient(#476481, #1a242f);
   background: -moz-linear-gradient(#476481, #1a242f);
   background: -o-linear-gradient(#476481, #1a242f);
+  background: -webkit-linear-gradient(#476481, #1a242f);
   background: linear-gradient(#476481, #1a242f); }
-  /* line 218, ../scss/small.scss */
+  /* line 221, ../scss/small.scss */
   footer span {
     display: table-cell; }
-    /* line 221, ../scss/small.scss */
+    /* line 224, ../scss/small.scss */
     footer span img {
       padding: 20%; }
 
 @media screen and (max-width: 640px) {
-  /* line 229, ../scss/small.scss */
+  /* line 232, ../scss/small.scss */
   .opening-view .headline {
     font-size: 60%; }
 
-  /* line 235, ../scss/small.scss */
+  /* line 238, ../scss/small.scss */
   .container section, .container hr {
     padding: 0 39px; }
 
-  /* line 242, ../scss/small.scss */
+  /* line 243, ../scss/small.scss */
   .column.full,
   .column.two-thirds,
   .column.half {
@@ -415,31 +416,31 @@ footer {
     margin: 0;
     width: 100%; }
 
-  /* line 250, ../scss/small.scss */
+  /* line 253, ../scss/small.scss */
   .nav ul {
     padding: 0 37px 0 0; }
-    /* line 253, ../scss/small.scss */
+    /* line 256, ../scss/small.scss */
     .nav ul img.logo {
       height: 31px; }
-    /* line 257, ../scss/small.scss */
+    /* line 260, ../scss/small.scss */
     .nav ul a {
       padding: 5px 0; }
 
-  /* line 263, ../scss/small.scss */
+  /* line 266, ../scss/small.scss */
   .locations #map {
     height: 300px; } }
 @media screen and (max-width: 1100px) {
-  /* line 269, ../scss/small.scss */
+  /* line 272, ../scss/small.scss */
   .column.one-third {
     float: none;
     margin: 0;
     width: 100%; }
 
-  /* line 275, ../scss/small.scss */
+  /* line 278, ../scss/small.scss */
   .speakers .one-third .profile-photo {
     width: 20%; }
 
-  /* line 279, ../scss/small.scss */
+  /* line 282, ../scss/small.scss */
   .speakers .one-third .text-content {
     padding: 0 0 10% 25%; } }
 /* Foundation v2.1.4 http://foundation.zurb.com */
@@ -567,7 +568,7 @@ table td, table th {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 54, ../scss/helper-classes.scss */
+/* line 53, ../scss/helper-classes.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -595,7 +596,7 @@ table td, table th {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 84, ../scss/helper-classes.scss */
+/* line 83, ../scss/helper-classes.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -619,7 +620,7 @@ table td, table th {
 .no-box-shadow {
   box-shadow: none !important;
   background-color: transparent !important; }
-  /* line 107, ../scss/helper-classes.scss */
+  /* line 106, ../scss/helper-classes.scss */
   .no-box-shadow:hover, .no-box-shadow:active {
     box-shadow: none !important;
     background-color: transparent !important; }
@@ -637,7 +638,7 @@ table td, table th {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 15, ../scss/print.scss */
+  /* line 14, ../scss/print.scss */
   a,
   a:visited {
     text-decoration: underline; }
@@ -653,13 +654,13 @@ table td, table th {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 33, ../scss/print.scss */
+  /* line 31, ../scss/print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-  /* line 38, ../scss/print.scss */
+  /* line 37, ../scss/print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -670,7 +671,7 @@ table td, table th {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 48, ../scss/print.scss */
+  /* line 47, ../scss/print.scss */
   tr,
   img {
     page-break-inside: avoid; }
@@ -681,15 +682,14 @@ table td, table th {
 
   @page {
     margin: 0.5cm; }
-
-  /* line 62, ../scss/print.scss */
+  /* line 60, ../scss/print.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 68, ../scss/print.scss */
+  /* line 67, ../scss/print.scss */
   h2,
   h3 {
     page-break-after: avoid; } }

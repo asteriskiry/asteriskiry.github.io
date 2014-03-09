@@ -32,6 +32,8 @@ function SynergiaSite() {
                 scrollwheel: false,
                 // Disable map type selection
                 mapTypeControl: false,
+                // Disable streetview control
+                streetViewControl: false,
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(60.4541253,22.2917672), // Turku
                 // How you would like to style the map.
