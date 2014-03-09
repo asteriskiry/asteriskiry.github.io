@@ -27,16 +27,39 @@ function SynergiaSite() {
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
-                zoom: 11,
+                zoom: 15,
                 // Disable scroll wheel to prevent map zoom while scrolling the page.
                 scrollwheel: false,
                 // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(60.4500, 22.2667), // New York
-
+                center: new google.maps.LatLng(60.4541253,22.2917672), // Turku
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
-                styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#435158"		}		]	}	]
-            };
+
+                // This is http://snazzymaps.com/style/30/cobalt
+                styles: [
+                            {
+                                featureType:"all",
+                                elementType:"all",
+                                stylers:[
+                                    {
+                                        invert_lightness:true
+                                    },
+                                    {
+                                        saturation:10
+                                    },
+                                    {
+                                        lightness:30
+                                    },
+                                    {
+                                        gamma:0.5
+                                    },
+                                    {
+                                        hue:"#435158"
+                                    }
+                                ]
+                            }
+                        ]
+            }; 
 
             // Get the HTML DOM element that will contain your map
             // We are using a div with id="map" seen below in the <body>
@@ -44,6 +67,24 @@ function SynergiaSite() {
 
             // Create the Google Map using out element and options defined above
             var map = new google.maps.Map(mapElement, mapOptions);
+
+            // Map markers for places
+            var uusisMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(60.4562776,22.292009),
+                map: map,
+                title: 'Uusi-S'
+            });
+            var ictMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(60.4490542,22.295841),
+                map: map,
+                title: 'ICT-talo'
+            });
+            var proffaMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(60.454436,22.287984),
+                map: map,
+                title: 'Proffan Kellari'
+            });
+            
         }
 	}
 
