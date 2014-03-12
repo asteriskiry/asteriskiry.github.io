@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
 /* Welcome to Compass.
  * In this file you should centralize your imports
  */
@@ -10,9 +12,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,900);
-@import url(https://fonts.googleapis.com/css?family=Raleway:200);
-/* line 16, ../scss/defaults.scss */
+/* line 20, ../scss/defaults.scss */
 html,
 button,
 input,
@@ -56,7 +56,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 63, ../scss/defaults.scss */
+/* line 66, ../scss/defaults.scss */
 audio,
 canvas,
 img,
@@ -108,7 +108,7 @@ body {
   line-height: 1.5;
   color: #333; }
 
-/* line 12, ../scss/typography.scss */
+/* line 13, ../scss/typography.scss */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -138,8 +138,15 @@ a, a:visited {
 th {
   font-family: 'Fjalla One', sans-serif; }
 
-/*! responsive-nav.js 1.0.25 by @viljamis */
-/* line 3, ../scss/responsive-nav.scss */
+/*! responsive-nav.js 1.0.32 by @viljamis */
+@font-face {
+  font-family: "responsivenav";
+  src: url("../icons/responsivenav.eot");
+  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("../icons/responsivenav.ttf") format("truetype"), url("../icons/responsivenav.woff") format("woff"), url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 14, ../scss/responsive-nav.scss */
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -147,12 +154,12 @@ th {
   display: block;
   list-style: none; }
 
-/* line 11, ../scss/responsive-nav.scss */
+/* line 22, ../scss/responsive-nav.scss */
 .nav-collapse li {
   width: 100%;
   display: block; }
 
-/* line 16, ../scss/responsive-nav.scss */
+/* line 27, ../scss/responsive-nav.scss */
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
@@ -161,36 +168,165 @@ th {
   overflow: hidden;
   zoom: 1; }
 
-/* line 25, ../scss/responsive-nav.scss */
+/* line 36, ../scss/responsive-nav.scss */
 .nav-collapse.opened {
   max-height: 9999px; }
 
-/* line 29, ../scss/responsive-nav.scss */
-.nav-collapse.disable-pointer-events {
+/* line 40, ../scss/responsive-nav.scss */
+.disable-pointer-events {
   pointer-events: none !important; }
 
-/* line 33, ../scss/responsive-nav.scss */
+/* line 44, ../scss/responsive-nav.scss */
 .nav-toggle {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none; }
+  user-select: none;
+  position: absolute;
+  right: 1.9em;
+  top: -1.1em; }
+
+/* line 57, ../scss/responsive-nav.scss */
+.nav-toggle:before {
+  color: #444;
+  font-family: "responsivenav";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 3em;
+  text-transform: none;
+  position: absolute;
+  content: "\2261";
+  text-indent: 0;
+  text-align: center;
+  line-height: 65px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0; }
 
 @media screen and (min-width: 40em) {
-  /* line 44, ../scss/responsive-nav.scss */
+  /* line 77, ../scss/responsive-nav.scss */
   .js .nav-collapse {
     position: relative; }
 
-  /* line 47, ../scss/responsive-nav.scss */
+  /* line 80, ../scss/responsive-nav.scss */
   .js .nav-collapse.closed {
     max-height: none; }
 
-  /* line 50, ../scss/responsive-nav.scss */
+  /* line 83, ../scss/responsive-nav.scss */
   .nav-toggle {
     display: none; } }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 9, ../scss/helper-classes.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 17, ../scss/helper-classes.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 28, ../scss/helper-classes.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 37, ../scss/helper-classes.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 54, ../scss/helper-classes.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 67, ../scss/helper-classes.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 84, ../scss/helper-classes.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 89, ../scss/helper-classes.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 98, ../scss/helper-classes.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* line 102, ../scss/helper-classes.scss */
+.no-box-shadow {
+  box-shadow: none !important;
+  background-color: transparent !important; }
+  /* line 107, ../scss/helper-classes.scss */
+  .no-box-shadow:hover, .no-box-shadow:active {
+    box-shadow: none !important;
+    background-color: transparent !important; }
+
+/*
+ * Align stuff verically IE9+.
+ */
 /* ==========================================================================
    Mobile first styles (loaded by all browsers)
    ========================================================================== */
@@ -218,10 +354,11 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1394109471');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.9))), url('../img/fp-bg-blurry.jpg?1392469083');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/fp-bg-blurry.jpg?1392469083');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -274,42 +411,43 @@ img {
 .row {
   overflow: hidden; }
 
-/* line 92, ../scss/small.scss */
-.nav {
+/* line 91, ../scss/small.scss */
+.header {
+  width: 100%;
   z-index: 9999; }
-  /* line 95, ../scss/small.scss */
+
+/* line 97, ../scss/small.scss */
+.nav {
+  display: block;
+  width: 100%; }
+  /* line 101, ../scss/small.scss */
   .nav ul {
     margin: 0;
-    padding: 0 57px 0 0;
-    display: table;
-    table-layout: fixed;
+    padding: 0;
     width: 100%;
     background-color: #efefef; }
-    /* line 103, ../scss/small.scss */
+    /* line 107, ../scss/small.scss */
     .nav ul li {
-      display: table-cell;
-      width: 25%;
       text-align: center; }
-      /* line 108, ../scss/small.scss */
+      /* line 110, ../scss/small.scss */
       .nav ul li:nth-child(1) a {
         background-color: #2c3e50; }
-      /* line 112, ../scss/small.scss */
+      /* line 114, ../scss/small.scss */
       .nav ul li:nth-child(2) a {
         background-color: #354b60; }
-      /* line 116, ../scss/small.scss */
+      /* line 118, ../scss/small.scss */
       .nav ul li:nth-child(3) a {
         background-color: #3e5771; }
-      /* line 120, ../scss/small.scss */
+      /* line 122, ../scss/small.scss */
       .nav ul li:nth-child(4) a {
         background-color: #476481; }
-    /* line 125, ../scss/small.scss */
-    .nav ul img.logo {
-      position: absolute;
-      right: 3px;
-      top: 3px;
-      height: 51px;
-      width: auto; }
-    /* line 133, ../scss/small.scss */
+      /* line 126, ../scss/small.scss */
+      .nav ul li:nth-child(5) a {
+        background-color: #507192; }
+      /* line 130, ../scss/small.scss */
+      .nav ul li:nth-child(6) a {
+        background-color: #597ea2; }
+    /* line 135, ../scss/small.scss */
     .nav ul a {
       text-decoration: none;
       font-family: 'Fjalla One', sans-serif;
@@ -318,97 +456,136 @@ img {
       height: 100%;
       color: white;
       padding: 15px 0;
+      -webkit-transition-property: background-color, color, text-shadow;
       -moz-transition-property: background-color, color, text-shadow;
       -o-transition-property: background-color, color, text-shadow;
-      -webkit-transition-property: background-color, color, text-shadow;
       transition-property: background-color, color, text-shadow;
+      -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
-      -webkit-transition-duration: 0.2s;
       transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in-out;
       -moz-transition-timing-function: ease-in-out;
       -o-transition-timing-function: ease-in-out;
-      -webkit-transition-timing-function: ease-in-out;
       transition-timing-function: ease-in-out;
-      -moz-box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5);
       -webkit-box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5);
+      -moz-box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5);
       box-shadow: inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5); }
-    /* line 147, ../scss/small.scss */
+    /* line 149, ../scss/small.scss */
+    .nav ul li:last-child a {
+      box-shadow: none; }
+    /* line 153, ../scss/small.scss */
     .nav ul a:nth-child(n):hover {
       background-color: #566473;
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); }
 
-/* line 155, ../scss/small.scss */
+/* line 161, ../scss/small.scss */
 .container section, .container hr {
   width: 100%;
   padding: 0 57px;
   margin: 0 auto;
   padding-bottom: 1em; }
-/* line 162, ../scss/small.scss */
+/* line 168, ../scss/small.scss */
 .container h2 {
   border-bottom: 4px solid #2c3e50; }
 
-/* line 169, ../scss/small.scss */
+/* line 175, ../scss/small.scss */
 .speakers .one-third {
   position: relative; }
-  /* line 172, ../scss/small.scss */
+  /* line 178, ../scss/small.scss */
   .speakers .one-third .profile-photo {
     position: absolute;
     width: 30%;
     height: auto;
-    border-radius: 100%; }
-  /* line 179, ../scss/small.scss */
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    padding: 0.5em;
+    background-color: white; }
+  /* line 187, ../scss/small.scss */
   .speakers .one-third .text-content {
     padding: 0 0 0 35%;
     margin: 0;
     word-break: break-word; }
 
-/* line 188, ../scss/small.scss */
+/* line 196, ../scss/small.scss */
 .schedule table {
   table-layout: auto;
   width: 100%; }
-  /* line 193, ../scss/small.scss */
+  /* line 201, ../scss/small.scss */
   .schedule table tr:nth-child(odd) {
     background-color: transparent; }
-  /* line 197, ../scss/small.scss */
+  /* line 205, ../scss/small.scss */
   .schedule table tr:nth-child(even) {
     background-color: #ccc; }
 
-/* line 205, ../scss/small.scss */
+/* line 213, ../scss/small.scss */
 .locations #map {
   width: 100%;
   height: 600px; }
-/* line 209, ../scss/small.scss */
+/* line 217, ../scss/small.scss */
 .locations #map img {
   max-width: none; }
 
-/* line 214, ../scss/small.scss */
+/* line 223, ../scss/small.scss */
+.sponsors .column {
+  margin-bottom: 1em !important;
+  text-align: center;
+  height: 5em; }
+  /* line 228, ../scss/small.scss */
+  .sponsors .column img, .sponsors .column h1 {
+    max-height: 100%;
+    width: auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+/* line 236, ../scss/small.scss */
 footer {
   display: table;
   table-layout: fixed;
   width: 100%;
   border-top: 1px solid black;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #476481), color-stop(100%, #1a242f));
+  background: -webkit-linear-gradient(#476481, #1a242f);
   background: -moz-linear-gradient(#476481, #1a242f);
   background: -o-linear-gradient(#476481, #1a242f);
-  background: -webkit-linear-gradient(#476481, #1a242f);
   background: linear-gradient(#476481, #1a242f); }
-  /* line 221, ../scss/small.scss */
+  /* line 243, ../scss/small.scss */
   footer span {
     display: table-cell; }
-    /* line 224, ../scss/small.scss */
+    /* line 246, ../scss/small.scss */
     footer span img {
       padding: 20%; }
 
+@media screen and (min-width: 640px) {
+  /* line 255, ../scss/small.scss */
+  .nav ul {
+    display: table;
+    table-layout: fixed; }
+    /* line 259, ../scss/small.scss */
+    .nav ul li {
+      display: table-cell; }
+
+  /* line 266, ../scss/small.scss */
+  .sponsors .column {
+    height: 10em; } }
 @media screen and (max-width: 640px) {
-  /* line 232, ../scss/small.scss */
+  /* line 274, ../scss/small.scss */
   .opening-view .headline {
     font-size: 60%; }
 
-  /* line 238, ../scss/small.scss */
+  /* line 280, ../scss/small.scss */
   .container section, .container hr {
     padding: 0 39px; }
 
-  /* line 243, ../scss/small.scss */
+  /* line 287, ../scss/small.scss */
   .column.full,
   .column.two-thirds,
   .column.half {
@@ -416,31 +593,25 @@ footer {
     margin: 0;
     width: 100%; }
 
-  /* line 253, ../scss/small.scss */
-  .nav ul {
-    padding: 0 37px 0 0; }
-    /* line 256, ../scss/small.scss */
-    .nav ul img.logo {
-      height: 31px; }
-    /* line 260, ../scss/small.scss */
-    .nav ul a {
-      padding: 5px 0; }
+  /* line 297, ../scss/small.scss */
+  .nav ul a {
+    padding: 5px 0; }
 
-  /* line 266, ../scss/small.scss */
+  /* line 303, ../scss/small.scss */
   .locations #map {
     height: 300px; } }
 @media screen and (max-width: 1100px) {
-  /* line 272, ../scss/small.scss */
+  /* line 309, ../scss/small.scss */
   .column.one-third {
     float: none;
     margin: 0;
     width: 100%; }
 
-  /* line 278, ../scss/small.scss */
+  /* line 315, ../scss/small.scss */
   .speakers .one-third .profile-photo {
     width: 20%; }
 
-  /* line 282, ../scss/small.scss */
+  /* line 319, ../scss/small.scss */
   .speakers .one-third .text-content {
     padding: 0 0 10% 25%; } }
 /* Foundation v2.1.4 http://foundation.zurb.com */
@@ -522,110 +693,6 @@ table td, table th {
   table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
     display: none; } }
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Image replacement
- */
-/* line 9, ../scss/helper-classes.scss */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px; }
-
-/* line 17, ../scss/helper-classes.scss */
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%; }
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-/* line 28, ../scss/helper-classes.scss */
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-/* line 37, ../scss/helper-classes.scss */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-/* line 53, ../scss/helper-classes.scss */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-/* line 67, ../scss/helper-classes.scss */
-.invisible {
-  visibility: hidden; }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-/* line 83, ../scss/helper-classes.scss */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-/* line 89, ../scss/helper-classes.scss */
-.clearfix:after {
-  clear: both; }
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-/* line 98, ../scss/helper-classes.scss */
-.clearfix {
-  *zoom: 1; }
-
-/* line 102, ../scss/helper-classes.scss */
-.no-box-shadow {
-  box-shadow: none !important;
-  background-color: transparent !important; }
-  /* line 106, ../scss/helper-classes.scss */
-  .no-box-shadow:hover, .no-box-shadow:active {
-    box-shadow: none !important;
-    background-color: transparent !important; }
-
-/* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
@@ -638,7 +705,7 @@ table td, table th {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 14, ../scss/print.scss */
+  /* line 15, ../scss/print.scss */
   a,
   a:visited {
     text-decoration: underline; }
@@ -654,13 +721,13 @@ table td, table th {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 31, ../scss/print.scss */
+  /* line 33, ../scss/print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-  /* line 37, ../scss/print.scss */
+  /* line 38, ../scss/print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -671,7 +738,7 @@ table td, table th {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 47, ../scss/print.scss */
+  /* line 48, ../scss/print.scss */
   tr,
   img {
     page-break-inside: avoid; }
@@ -682,14 +749,15 @@ table td, table th {
 
   @page {
     margin: 0.5cm; }
-  /* line 60, ../scss/print.scss */
+
+  /* line 62, ../scss/print.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 67, ../scss/print.scss */
+  /* line 68, ../scss/print.scss */
   h2,
   h3 {
     page-break-after: avoid; } }

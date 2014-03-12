@@ -88,21 +88,23 @@ img {
   overflow: hidden;
 }
 
+.header {
+  width: 100%;
+  z-index: 9999;
+}
+
 // Navigation
 .nav {
-  z-index: 9999;
+  display: block;
+  width: 100%;
 
   ul {
     margin: 0;
-    padding: 0 57px 0 0;
-    display: table;
-    table-layout: fixed;
+    padding: 0;
     width: 100%;
     background-color: $body-gray;
 
     li {
-      display: table-cell;
-      width: 25%;
       text-align: center;
 
       &:nth-child(1) a {
@@ -120,14 +122,14 @@ img {
       &:nth-child(4) a {
         background-color: lighten($midnight-blue, 15%);
       }
-    }
 
-    img.logo {
-      position: absolute;
-      right: 3px;
-      top: 3px;
-      height: 51px;
-      width: auto;
+      &:nth-child(5) a {
+        background-color: lighten($midnight-blue, 20%);
+      }
+
+      &:nth-child(6) a {
+        background-color: lighten($midnight-blue, 25%);
+      }
     }
 
     a {
@@ -142,6 +144,10 @@ img {
       @include transition-duration(0.2s);
       @include transition-timing-function(ease-in-out);
       @include box-shadow(inset -10px 0px 5px -5px rgba(50, 50, 50, 0.5));
+    }
+
+    li:last-child a {
+      box-shadow: none;
     }
 
     a:nth-child(n):hover {
@@ -173,7 +179,9 @@ img {
       position: absolute;
       width: 30%;
       height: auto;
-      border-radius: 100%;
+      @include border-radius(100%);
+      padding: 0.5em;
+      background-color: white;
     }
 
     .text-content {
@@ -211,6 +219,20 @@ img {
   }
 }
 
+.sponsors {
+  .column {
+    margin-bottom: 1em !important;
+    text-align: center;
+    height: 5em;
+
+    img, h1 {
+      max-height: 100%;
+      width: auto;
+      @include vertical-align;
+    }
+  }
+}
+
 footer {
   display: table;
   table-layout: fixed;
@@ -223,6 +245,26 @@ footer {
 
     img {
       padding: 20%;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .nav {
+
+    ul {
+      display: table;
+      table-layout: fixed;
+
+      li {
+        display: table-cell;
+      }
+    }
+  }
+
+  .sponsors {
+    .column {
+      height: 10em;
     }
   }
 }
@@ -251,11 +293,6 @@ footer {
   .nav {
 
     ul {
-      padding: 0 37px 0 0;
-
-      img.logo {
-        height: 31px;
-      }
 
       a {
         padding: 5px 0;
