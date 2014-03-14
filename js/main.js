@@ -3,7 +3,8 @@ function SynergiaSite() {
 	// SELECT ONCE
 	var variables = {
         body: $("body"),
-		header: $(".header")
+		header: $(".header"),
+        nav: $(".nav")
 	};
 
 	// Site initialization flow.
