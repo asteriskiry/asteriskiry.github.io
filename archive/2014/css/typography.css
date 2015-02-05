@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Base typography
+   ========================================================================== */
+/* line 5, ../scss/typography.scss */
+body {
+  font-family: 'Lato', sans-serif; }
+
+/* line 10, ../scss/typography.scss */
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Lustria', serif; }

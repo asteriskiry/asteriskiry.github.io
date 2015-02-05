@@ -3,7 +3,7 @@
    ========================================================================== */
 
 // Colors
-$midnight-blue: #E4433D;
+$midnight-blue: #2c3e50;
 $body-gray: #efefef;
 
 html {
@@ -31,7 +31,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  @include background(linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), image-url("binaryheart-bg.jpg"));
+  @include background(linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), image-url("fp-bg-blurry.jpg"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
