@@ -354,11 +354,11 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.9))), url('../img/binaryheart-bg.jpg?1423151923');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423151923');
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423151923');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423151923');
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423151923');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.9))), url('../img/binaryheart-bg.jpg?1423152653');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423152653');
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423152653');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423152653');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/binaryheart-bg.jpg?1423152653');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
