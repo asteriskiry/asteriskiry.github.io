@@ -19,8 +19,6 @@ body {
 
 // Basic responsive images
 img {
-  width: 100%;
-  height: auto;
   max-width: 100%;
 }
 
@@ -172,23 +170,26 @@ img {
 
 .speakers {
 
-  .one-third {
-    position: relative;
+  .profile-photo {
+    @include border-radius(100%);
+    padding: 0.5em;
+    background-color: white;
+    margin-bottom: 1em;
+  }
 
-    .profile-photo {
-      position: absolute;
-      width: 30%;
-      height: auto;
-      @include border-radius(100%);
-      padding: 0.5em;
-      background-color: white;
-    }
+  .grid {
+    margin-bottom: 2em;
+  }
 
-    .text-content {
-      padding: 0 0 0 35%;
-      margin: 0;
-      word-break: break-word;
-    }
+  .profile-info {
+    max-width: 218px;
+    text-align: center;
+  }
+
+  .text-content {
+    padding: 0 0 0 35%;
+    margin: 0;
+    word-break: break-word;
   }
 }
 
@@ -319,4 +320,11 @@ footer {
   .speakers .one-third .text-content {
     padding: 0 0 10% 25%;
   }
+}
+
+// Gives a max-width for the content to optimize for comfortable reading length.
+.reading-wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -4,6 +4,8 @@
 
 // Import compass ccs3 helpers.
 @import "compass/css3";
+// Grid framework for easier styling.
+@import "csswizardry-grids";
 // Import reasonable defaults.
 @import "defaults";
 // Import base typography.
