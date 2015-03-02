@@ -3,7 +3,7 @@
    ========================================================================== */
 
 // Colors
-$midnight-blue: #E4433D;
+$red: #E4433D;
 $body-gray: #efefef;
 
 html {
@@ -29,7 +29,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  @include background(linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0.65) 100%), image-url("binaryheart-bg.png"));
+  @include background(linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%), image-url("binaryheart-bg.png"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -40,7 +40,7 @@ img {
     max-width: 31em;
     bottom: 1em;
     left: 2em;
-    color: white;
+    color: black;
   }
 }
 
@@ -106,27 +106,27 @@ img {
       text-align: center;
 
       &:nth-child(1) a {
-        background-color: $midnight-blue;
+        background-color: $red;
       }
 
       &:nth-child(2) a {
-        background-color: lighten($midnight-blue, 5%);
+        background-color: lighten($red, 5%);
       }
 
       &:nth-child(3) a {
-        background-color: lighten($midnight-blue, 10%);
+        background-color: lighten($red, 10%);
       }
 
       &:nth-child(4) a {
-        background-color: lighten($midnight-blue, 15%);
+        background-color: lighten($red, 15%);
       }
 
       &:nth-child(5) a {
-        background-color: lighten($midnight-blue, 20%);
+        background-color: lighten($red, 20%);
       }
 
       &:nth-child(6) a {
-        background-color: lighten($midnight-blue, 25%);
+        background-color: lighten($red, 25%);
       }
     }
 
@@ -149,7 +149,7 @@ img {
     }
 
     a:nth-child(n):hover {
-      background-color: tint($midnight-blue, 20%);
+      background-color: tint($red, 20%);
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     }
   }
@@ -164,7 +164,7 @@ img {
   }
 
   h2 {
-    border-bottom: 4px solid $midnight-blue;
+    border-bottom: 4px solid $red;
   }
 }
 
@@ -238,8 +238,8 @@ footer {
   display: table;
   table-layout: fixed;
   width: 100%;
-  border-top: 1px solid black;
-  @include background(linear-gradient(lighten($midnight-blue, 15%), darken($midnight-blue, 10%)));
+  border-top: 1px solid darken($red, 15%);
+  @include background(linear-gradient(lighten($red, 15%), darken($red, 10%)));
 
   span {
     display: table-cell;

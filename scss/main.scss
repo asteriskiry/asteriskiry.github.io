@@ -5,11 +5,14 @@
 // Import compass ccs3 helpers.
 @import "compass/css3";
 // Grid framework for easier styling.
+$use-markup-fix: false;
 @import "csswizardry-grids";
 // Import reasonable defaults.
 @import "defaults";
 // Import base typography.
 @import "typography";
+// Font awesome.
+@import "font-awesome-4.3.0/scss/font-awesome";
 // Import Responsive navigation styles.
 @import "responsive-nav.scss";
 // Import helper classes like clearfix etc.
