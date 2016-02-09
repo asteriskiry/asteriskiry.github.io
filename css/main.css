@@ -3683,6 +3683,8 @@ img {
       .nav ul li:nth-child(6) a {
         background-color: #f4afad; }
     /* line 133, ../scss/small.scss */
+	.nav ul li:nth-child(7) a {
+        background-color: #f4b3b1; }
     .nav ul a {
       text-decoration: none;
       font-family: 'Fjalla One', sans-serif;
