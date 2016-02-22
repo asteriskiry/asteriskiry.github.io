@@ -4104,24 +4104,23 @@ th {
 /* line 27, ../scss/responsive-nav.scss */
 .js .nav-collapse {
   clip: rect(0 0 0 0);
-  max-height: 0;
   position: absolute;
   display: block;
   overflow: hidden;
   zoom: 1;
 }
 
-/* line 36, ../scss/responsive-nav.scss */
+/* line 35, ../scss/responsive-nav.scss */
 .nav-collapse.opened {
   max-height: 9999px;
 }
 
-/* line 40, ../scss/responsive-nav.scss */
+/* line 39, ../scss/responsive-nav.scss */
 .disable-pointer-events {
   pointer-events: none !important;
 }
 
-/* line 44, ../scss/responsive-nav.scss */
+/* line 43, ../scss/responsive-nav.scss */
 .nav-toggle {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -4136,7 +4135,7 @@ th {
   padding: 6px;
 }
 
-/* line 58, ../scss/responsive-nav.scss */
+/* line 57, ../scss/responsive-nav.scss */
 .nav-toggle:before {
   color: #444;
   font-family: "responsivenav";
@@ -4157,17 +4156,17 @@ th {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 78, ../scss/responsive-nav.scss */
+  /* line 77, ../scss/responsive-nav.scss */
   .js .nav-collapse {
     position: relative;
   }
 
-  /* line 81, ../scss/responsive-nav.scss */
+  /* line 80, ../scss/responsive-nav.scss */
   .js .nav-collapse.closed {
     max-height: none;
   }
 
-  /* line 84, ../scss/responsive-nav.scss */
+  /* line 83, ../scss/responsive-nav.scss */
   .nav-toggle {
     display: none;
   }
