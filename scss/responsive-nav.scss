@@ -26,6 +26,7 @@
 
 .js .nav-collapse {
   clip: rect(0 0 0 0);
+  max-height: 0;
   position: absolute;
   display: block;
   overflow: hidden;
