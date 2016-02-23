@@ -124,9 +124,9 @@ function SynergiaSite() {
             // var proffaInfowindow = new google.maps.InfoWindow({
                     // content: '<p><b>Proffan Kellari</b><br />Tikkakisa</p>'
                 // });
-            // google.maps.event.addListener(uusisMarker, 'click', function() {
-                // uusisInfowindow.open(map, uusisMarker);
-            // });
+            google.maps.event.addListener(kauppisMercaMarker, 'click', function() {
+                kauppisMercaInfoWindow.open(map, kauppisMercaMarker);
+            });
             // google.maps.event.addListener(ictMarker, 'click', function() {
                 // ictInfowindow.open(map, ictMarker);
             // });
