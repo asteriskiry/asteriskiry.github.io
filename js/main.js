@@ -100,7 +100,7 @@ function SynergiaSite() {
             var kauppisMercaMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(60.4545853,22.2884077),
                 map: map,
-                title: 'Turun kauppakorkeakoulu, Merca-tori',
+                title: 'Turun kauppakorkeakoulu',
                 icon: MapMarkerImage
             });
             // var ictMarker = new google.maps.Marker({
@@ -115,9 +115,9 @@ function SynergiaSite() {
                 // title: 'Proffan Kellari',
                 // icon: MapMarkerImage
             // });
-            // var uusisInfowindow = new google.maps.InfoWindow({
-                    // content: '<p><b>Uusi-S</b><br />Sauna, Lemminkäisenkierros ja jatkobileet</p>'
-                // });
+            var kauppisMercaInfoWindow = new google.maps.InfoWindow({
+                    content: '<p><b>Turun kauppakorkeakoulu</b><br />Merca stands, Speeches</p>'
+                });
             // var ictInfowindow = new google.maps.InfoWindow({
                     // content: '<p><b>ICT-talo</b><br />Seminaariluennot</p>'
                 // });
