@@ -79,7 +79,7 @@ function SynergiaSite() {
                                         gamma:0.5
                                     },
                                     {
-                                        hue:"#435158"
+                                        hue:"#007f00"
                                     }
                                 ]
                             }
@@ -97,12 +97,12 @@ function SynergiaSite() {
 
             // Map markers for places
 			
-            // var uusisMarker = new google.maps.Marker({
-                // position: new google.maps.LatLng(60.4562776,22.292009),
-                // map: map,
-                // title: 'Uusi-S',
-                // icon: MapMarkerImage
-            // });
+            var kauppisMercaMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(60.4545853,22.2884077),
+                map: map,
+                title: 'Turun kauppakorkeakoulu, Merca-tori',
+                icon: MapMarkerImage
+            });
             // var ictMarker = new google.maps.Marker({
                 // position: new google.maps.LatLng(60.4490542,22.295841),
                 // map: map,
