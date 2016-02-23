@@ -100,7 +100,7 @@ function SynergiaSite() {
             var kauppisMercaMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(60.4545853,22.2884077),
                 map: map,
-                title: 'Turun kauppakorkeakoulu',
+                title: 'Turku School of Economics',
                 icon: MapMarkerImage
             });
             // var ictMarker = new google.maps.Marker({
@@ -116,7 +116,7 @@ function SynergiaSite() {
                 // icon: MapMarkerImage
             // });
             var kauppisMercaInfoWindow = new google.maps.InfoWindow({
-                    content: '<p><b>Turun kauppakorkeakoulu</b><br />Merca stands, Speeches</p>'
+                    content: '<p><b>Turku School of Economics</b><br />Merca stands, Speeches</p>'
                 });
             // var ictInfowindow = new google.maps.InfoWindow({
                     // content: '<p><b>ICT-talo</b><br />Seminaariluennot</p>'
