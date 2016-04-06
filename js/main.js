@@ -103,12 +103,12 @@ function SynergiaSite() {
                 title: 'Turku School of Economics',
                 icon: MapMarkerImage
             });
-            // var ictMarker = new google.maps.Marker({
-                // position: new google.maps.LatLng(60.4490542,22.295841),
-                // map: map,
-                // title: 'ICT-talo',
-                // icon: MapMarkerImage
-            // });
+            var parkkiMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(60.456047,22.290088),
+                map: map,
+                title: 'Parkki',
+                icon: MapMarkerImage
+            });
             // var proffaMarker = new google.maps.Marker({
                 // position: new google.maps.LatLng(60.454436,22.287984),
                 // map: map,
@@ -118,18 +118,18 @@ function SynergiaSite() {
             var kauppisMercaInfoWindow = new google.maps.InfoWindow({
                     content: '<p><b>Turku School of Economics</b><br />Merca stands, Speeches</p>'
                 });
-            // var ictInfowindow = new google.maps.InfoWindow({
-                    // content: '<p><b>ICT-talo</b><br />Seminaariluennot</p>'
-                // });
+            var parkkiInfowindow = new google.maps.InfoWindow({
+                    content: '<p><b>Parkki</b><br />After Party<br>Lemminkäisenkierros</p>'
+                });
             // var proffaInfowindow = new google.maps.InfoWindow({
                     // content: '<p><b>Proffan Kellari</b><br />Tikkakisa</p>'
                 // });
             google.maps.event.addListener(kauppisMercaMarker, 'click', function() {
                 kauppisMercaInfoWindow.open(map, kauppisMercaMarker);
             });
-            // google.maps.event.addListener(ictMarker, 'click', function() {
-                // ictInfowindow.open(map, ictMarker);
-            // });
+            google.maps.event.addListener(parkkiMarker, 'click', function() {
+                parkkiInfowindow.open(map, parkkiMarker);
+            });
             // google.maps.event.addListener(proffaMarker, 'click', function() {
                 // proffaInfowindow.open(map, proffaMarker);
             // });
