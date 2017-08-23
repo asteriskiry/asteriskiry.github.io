@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Base typography
+   ========================================================================== */
+
+body {
+	font-family: 'Average', serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-family: 'Fjalla One', sans-serif;
+	line-height: 1.3;
+}
+
+h1 { font-size:3.75em; margin: 0.2em 0; }
+h2 { font-size:2.25em; margin: 1em 0; }
+h3 { font-size:1.3125em; margin: 0; }
+
+a, a:visited {
+	color: #007f00;
+	text-decoration: underline;
+}
+
+th {
+	font-family: 'Fjalla One', sans-serif;
+}

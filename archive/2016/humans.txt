@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Joonas Salovaara -- developer -- @sarukuku
+    Roope Merikukka -- developer -- @roopemerikukka
+
+# THANKS
+
+    Everyone organizing Synergia Turku!
+    Matti Koivula - the awesome photograph on top of the page!
+
+# TECHNOLOGY COLOPHON
+
+	GitHub
+    HTML5, CSS3, SASS, Compass
+    Normalize.css, jQuery, Modernizr

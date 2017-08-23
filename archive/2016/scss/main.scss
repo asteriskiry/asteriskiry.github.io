@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should centralize your imports
+ */
+
+// Import compass css3 helpers.
+@import "compass/css3";
+// Grid framework for easier styling.
+$use-markup-fix: false;
+@import "csswizardry-grids";
+// Import reasonable defaults.
+@import "defaults";
+// Import base typography.
+@import "typography";
+// Font awesome.
+@import "font-awesome-4.3.0/scss/font-awesome";
+// Import Responsive navigation styles.
+@import "responsive-nav.scss";
+// Import helper classes like clearfix etc.
+@import "helper-classes";
+// Import mobile first styles.
+@import "small";
+// Responsive tables
+@import "responsive-tables";
+// Import print styles.
+@import "print";
+
