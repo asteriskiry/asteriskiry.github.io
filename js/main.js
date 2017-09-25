@@ -79,7 +79,7 @@ function SynergiaSite() {
                                         gamma:0.5
                                     },
                                     {
-                                        hue:"#007f00"
+                                        hue:"#003a7c"
                                     }
                                 ]
                             }
