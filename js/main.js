@@ -104,9 +104,9 @@ function SynergiaSite() {
                 icon: MapMarkerImage
             });
             var parkkiMarker = new google.maps.Marker({
-                position: new google.maps.LatLng(60.456047,22.290088),
+                position: new google.maps.LatLng(60.460016, 22.298373),
                 map: map,
-                title: 'Parkki',
+                title: 'Q-talo',
                 icon: MapMarkerImage
             });
             // var proffaMarker = new google.maps.Marker({
@@ -116,10 +116,10 @@ function SynergiaSite() {
                 // icon: MapMarkerImage
             // });
             var kauppisMercaInfoWindow = new google.maps.InfoWindow({
-                    content: '<p><b>Turku School of Economics</b><br />Merca stands, Speeches</p>'
+                    content: '<p><b>Turku School of Economics</b><br />Stands, Speeches</p>'
                 });
             var parkkiInfowindow = new google.maps.InfoWindow({
-                    content: '<p><b>Parkki</b><br />After Party<br>Lemminkäisenkierros</p>'
+                    content: '<p><b>Q-talo</b><br />After Party<br>Lemminkäisenkierros</p>'
                 });
             // var proffaInfowindow = new google.maps.InfoWindow({
                     // content: '<p><b>Proffan Kellari</b><br />Tikkakisa</p>'
