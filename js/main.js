@@ -56,7 +56,7 @@ function SynergiaSite() {
                 // Disable streetview control
                 streetViewControl: false,
                 // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(60.4541253,22.2917672), // Turku
+                center: new google.maps.LatLng(60.4585633,22.2890873), // Turku
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
 
