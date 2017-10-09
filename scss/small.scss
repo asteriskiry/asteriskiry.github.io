@@ -19,8 +19,9 @@ html {
 body {
   min-width: 100%;
   min-height: 100%;
-  background-color: $body-black;
-  color: #ffffff;
+  background-color: white;
+  color: black;
+  font-family: 'Whitney Condensed Light';
   
 }
 
@@ -36,16 +37,16 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  @include background(image-url("webSilma2.jpg"));
+  @include background(image-url("svg/Nettisivu_4.svg"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 
   .headline {
     position: absolute;
-    width: 60%;
+    width: 100%;
     max-width: 31em;
-    bottom: 1em;
+    bottom: 0em;
     left: 2em;
     color: white;
   }
