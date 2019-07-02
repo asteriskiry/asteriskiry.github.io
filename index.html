@@ -1,342 +1,72 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Synergia 2017</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js" lang="fi">
 
-        <!-- Force fb to use this picture when tha page is shared -->
-        <link rel="image_src" type="image/gif" href="http://www.domain.com/path/icon-facebook.gif" />
-        <meta property="og:image" content="http://www.synergiaturku.fi/img/synergia-logo.png" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Synergia 2019</title>
+    <meta name="description" content="Synergia Turku on korkeakouluopiskelijoille suunnattu IT-seminaaritapahtuma, joka kerää alan ammattilaisia puhumaan alan trendeistä. Vuonna 2019 teemana on TEKOÄLY.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="js/vendor/particles.min.js" as="script" />
+    <link rel="preload" href="js/script.js?v=1.008" as="script" />
+    <link rel="preload" href="css/style.css?v=1.009" as="style" />
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js/vendor/particles.min.js"></script>
+    <meta property="og:title" content="Synergia 2019" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.synergiaturku.fi" />
+    <meta property="og:image" content="img/synergia.jpg" />
+    <meta property="og:description" content="Synergia Turku on korkeakouluopiskelijoille suunnattu IT-seminaaritapahtuma, joka kerää alan ammattilaisia puhumaan alan trendeistä. Vuonna 2019 teemana on TEKOÄLY." />
+    <link rel="icon" type="image/png" href="img/favico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favico/favicon-16x16.png">
+    <link rel="manifest" href="img/favico/manifest.json">
+    <meta name="msapplication-TileColor" content="#460b3b">
+    <meta name="msapplication-TileImage" content="img/favico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#460b3b">
+    <link rel="stylesheet" href="css/style.css?v=1.009">
+</head>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css?v=3">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<body onload="loadParticles()">
+    <!-- <body> -->
 
-        <!-- Add your site or application content here -->
-        <section class="opening-view">
-            <div class="headline">
-                <h1 class="visuallyhidden">Synergia 2017</h1>
-                <img src="img/svg/synergia-black.svg" alt="Synergia 2017">
-                <p></p>
-            </div>
-        </section>
+    <div class="landing contrast">
+        <div class="landing-gradient scanline">&nbsp;</div>
+        <h1 class="heading__h1">Synergia 2019</h1>
+        <h2 id="landing-title" class="landing-title opacity">Synergia</h2>
+        <h2 id="landing-date" class="landing-title opacity">20.11.19</h2>
+        <svg class="rotate synergia-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 185">
+            <circle cx="92.5" cy="92.5" r="46" clip-rule="evenodd" fill="none" stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" />
+            <path d="M92.5 2.9c-3.9 0-7.8.3-11.7.9-.5 7.8-1 14.2-1.4 20.5-4.9.9-9.6 2.4-14.2 4.4-3.9-5-7.9-10.1-12.8-16.3C47.3 15 42.5 18 38 21.5c3.5 7.1 6.3 12.8 9 18.6-3.8 3.3-7.2 6.9-10.1 10.9-5.9-2.5-11.9-4.9-19.2-7.8-3.1 4.7-5.8 9.8-8 15 6.5 4.4 11.8 8 17.1 11.6-1.6 4.7-2.8 9.6-3.4 14.5-6.3.9-12.6 1.8-20.4 2.9l-.3 5.4c0 3.9.3 7.8.9 11.7 7.8.5 14.2 1 20.5 1.4.9 4.9 2.4 9.6 4.4 14.2-5 3.9-10.1 7.9-16.3 12.8 2.6 5.1 5.6 9.9 9.1 14.4 7.1-3.5 12.8-6.3 18.6-9 3.3 3.8 6.9 7.2 10.9 10.1-2.4 5.9-4.8 11.9-7.7 19.2 4.7 3.1 9.8 5.8 15 8 4.4-6.5 8-11.8 11.6-17.1 4.7 1.6 9.6 2.8 14.5 3.4.9 6.3 1.8 12.6 2.9 20.4l5.4.3c3.9 0 7.8-.3 11.7-.9.5-7.8 1-14.2 1.4-20.5 4.9-.9 9.6-2.4 14.2-4.4 4 5 7.9 10.1 12.8 16.3 5.1-2.6 9.9-5.6 14.4-9.1-3.5-7.1-6.3-12.8-9-18.6 3.8-3.3 7.2-6.9 10.1-10.9 5.9 2.4 11.9 4.8 19.2 7.7 3.1-4.7 5.8-9.8 8-15-6.5-4.4-11.8-8-17.1-11.6 1.6-4.7 2.8-9.6 3.4-14.5 6.3-.9 12.6-1.8 20.4-2.9l.3-5.4c0-3.9-.3-7.8-.9-11.7-7.8-.5-14.2-1-20.5-1.4-.9-4.9-2.4-9.6-4.4-14.2 5-4 10.1-7.9 16.3-12.8-2.6-5.1-5.6-9.9-9.1-14.4-7.1 3.5-12.8 6.3-18.6 9-3.3-3.8-6.9-7.2-10.9-10.1 2.4-5.9 4.8-11.9 7.7-19.2-4.7-3.1-9.8-5.8-15-8-4.4 6.5-8 11.8-11.6 17.1-4.7-1.6-9.6-2.8-14.5-3.4-.9-6.3-1.8-12.6-2.9-20.4-1.8-.1-3.6-.2-5.4-.2h0z" fill="none" stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" /></svg>
 
-        <div class="container">
-            <header class="header">
-                <nav class="nav nav-collapse">
-                    <ul>
-                        <li><a href="#info">Info</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
-                        <li><a href="#locations">Locations</a></li>
-                        <li><a href="#lemminkaisenkierros">Lemminkäisenkierros</a></li>
-                        <li><a href="#sponsors">Sponsors</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <div class="landing-some">
+            <a href="https://www.instagram.com/synergiaturku/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/synergiapaiva" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="mailto:vpj-asteriski@utu.fi" target="_blank">
+                <ion-icon name="mail"></ion-icon>
+            </a>
+        </div>
+        <div class="swipe" id="particles-js">
+        </div>
+    </div>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js?v=1.008"></script>
 
-            <div class="reading-wrapper">
+</body>
 
-                <section class="info" id="info">
-                    <h2>Info</h2>
-                    <div class="row clearfix">
-                        <div class="column half">
-
-                            <p>Turku's IT students' subject associations Asteriski ry, Digit ry, TuKyData ry, DaTe rf and Infå rf organize the 29th Synergia seminar on 1.11.2017 in Turku. The event gathers students to network and listen to speeches on interesting topics of technology and business.</p>
-
-                            <p>This year's theme is Smart city, Smart learning. The main parts of the event are experts' presentations about current subjects of smart city development as well as fair stands held by partners and guests. Synergia event also includes an evening program and  the traditional Lemminkäisenkierros.</p>
-
-                        </div>
-                        <div class="column half">
-
-                            <p> Find us on social media: <br>
-                                <a href="https://facebook.com/synergiapaiva"><img src="img/social-media/FB-f-Logo__blue_100.png" alt="facebook-icon" /></a>
-                                <a href="https://twitter.com/synergiaturku"><img src="img/social-media/TwitterLogo_blue.png" alt="twitter-icon" /></a>
-                                <a href="https://www.linkedin.com/groups/Synergia-Turku-8247560"><img src="img/social-media/In-2C-101px-TM.png" alt="linkedin-icon" /></a>
-                                <a href="https://instagram.com/synergiaturku"><img src="img/social-media/Instagram_Icon_Large.png" alt="instagram-icon" /></a>
-                            </p>
-                        </div>
-                    </div>
-
-                </section>
-                <section class="speakers" id="speakers">
-                    <h2>Speakers</h2>
-                    <div class="[ grid ]">
-                        <div class="[ grid__item  palm--one-whole  lap--one-half  desk--one-half ]">
-                            <div class="[ grid ]">
-                                <div class="[ grid__item  palm--one-whole  lap--one-whole  desk--one-half ]">
-                                    <div class="[ profile-info ]">
-									
-                                        <img class="profile-photo" src="img/speakers/DB-otson_kuva.jpeg" alt="DreamBroker">
-										<h3>Otso Kallinen</h3>
-                                        <h4>Dream Broker - Director, Innovations</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="[ grid__item  palm--one-whole  lap--one-half  desk--one-half ]">
-                            <p><kuvaus tähän>Video revolution</p>
-                        </div>
-                        <div class="[ grid__item  palm--one-whole  lap--one-half  desk--one-half ]">
-                            <div class="[ grid ]">
-                                <div class="[ grid__item  palm--one-whole  lap--one-whole  desk--one-half ]">
-                                    <div class="[ profile-info ]">
-									
-                                        <img class="profile-photo" src="img/speakers/IMG_4653.JPG" alt="Taiste"><h3>Tuomas Jalamo (Communications Manager)</h3>
-                                        <img class="profile-photo" src="img/speakers/IMG_4654.JPG" alt="Taiste">
-										<h3>Juho Kaasalainen (Software Developer)</h3>
-                                        <h4>Taiste</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="[ grid__item  palm--one-whole  lap--one-half  desk--one-half ]">
-                            <p><kuvaus tähän>Out in the Open – The Unused Potential of Open Data</p>
-                        </div>
-                        <div class="[ grid__item  palm--one-whole  lap--one-half  desk--one-half ]">
-                            <div class="[ grid ]">
-                                <div class="[ grid__item  palm--one-whole  lap--one-whole  desk--one-half ]">
-                                    <div class="[ profile-info ]">
-									
-                                        <img class="profile-photo" src="img/speakers/TIVIA-Mika Helenius.jpg" alt="TIVIA">
-										<h3>Mika Helenius</h3>
-                                        <h4>TIVIA - Executive Director</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="[ grid__item  palm--one-whole  lap--one-half  desk--one-half ]">
-                            <p><kuvaus tähän>Smart Learning Smart Career</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="schedule" id="schedule">
-                    <h2>Schedule</h2>
-                    <table class="responsive">
-                    <tr>
-                    <th>Time</th>
-                    <th>Speaker</th>
-                    <th>Topic</th>
-                    <th>Location</th>
-                    </tr>
-                    <tr>
-                        <td>13.00</td>
-                        <td>Opening speech</td>
-                        <td></td>
-                        <td>Lecture hall</td>
-                    </tr>
-                    <tr>
-                        <td>13:15</td>
-                        <td>Mika Helenius (TIVIA)</td>
-                        <td>Smart Learning Smart Career</td>
-                        <td>Lecture hall</td>
-                    </tr>
-                    <tr>
-                        <td>14:00</td>
-                        <td>Coffee break</td>
-                        <td></td>
-                        <td>Atrium</td>
-                    </tr>
-                    <tr>
-                        <td>14:30</td>
-                        <td>Tuomas Jalamo & Juho Kaasalainen (Taiste)</td>
-                        <td>Out in the Open - The Unused Potential of Open Data</td>
-                        <td>Lecture hall</td>
-                    </tr>
-                    <tr>
-                        <td>15:15</td>
-                        <td>Coffee break</td>
-                        <td></td>
-                        <td>Atrium</td>
-                    </tr>
-                    <tr>
-                        <td>15:45</td>
-                        <td>Otso Kallinen (Dream Broker)</td>
-                        <td>Video Revolution</td>
-                        <td>Lecture hall</td>
-                    </tr>
-                    <tr>
-                        <td>16:30</td>
-                        <td>Final speech</td>
-                        <td>Finishing and feedback</td>
-                        <td>Lecture hall</td>
-                    </tr>
-                    </table>
-                    <h2>Evening Schedule</h2>
-                    <p>Find more about the after party in <a
-                        href="https://www.facebook.com/events/1037015049703012/">
-                        Facebook</a>
-                    </p>
-                    <table class="responsive"> 
-                    <tr>
-                        <td>18.00-</td>
-                        <td>Afterparty</td>
-                        <td></td>
-                        <td>Q-talo</td>
-                    </tr>
-                    <tr>
-                        <td>21.00-</td>
-                        <td>Lemminkäisenkierros</td>
-                        <td></td>
-                        <td>Q-talo</td>
-                    </tr>
-                    <!--
-                    <tr>
-                        <td></td>
-                        <td>After After Party</td>
-                        <td></td>
-                        <td>Night Club Marilyn</td>
-                    </tr> 
-					-->
-                </table>
-                </section>
-				
-				<section class="lemminkaisenkierros" id="lemminkaisenkierros">
-                <h2>Lemminkäisenkierros</h2>
-					<p>The classic board game by Asteriski is an experience you won't forget(or you wish you could...). The game is played at the after party and teams should arrive at least 15 minutes before the game begins. The game is played by 4 teams of 3 people. Participation costs 15€ per team which includes quite a lot of beer and other delicacies!</p>
-					
-                    <a href="lemminkainen.pdf" color="#007f00">Rules (in Finnish)</a>
-				</section>
-				
-                <section class="locations" id="locations">
-                    <h2>Locations</h2>
-                    <div id="map"></div>
-                </section>
-
-                <section class="sponsors" id="sponsors">
-                    <h2>Sponsors</h2>
-                    <!--h3><i class="fa fa-certificate fa-lg fa-spin" style="color: gold;"></i> Kultasponsorit</h3>
-                    <br-->
-                    <div class="grid">
-                        <div class="grid__item one-half">
-                            <a href="https://www.cgi.fi/rekrytointi/opiskelijat-ja-vastavalmistuneet"
-                                target=_blank>
-                                <img src="img/sponsors/CGI_Logo_color.jpg"> </a>
-                        </div> 
-                        <div class="grid__item one-half">
-                            <a href="http://www.tfif.fi/" target=_blank>
-                                <img src="img/sponsors/tfif_logo_rgb_text_bredvid.png">
-                            </a>
-                        </div>
-                        <div class="grid__item one-half">
-                            <a href="https://www.atalent.fi/"
-                                target=_blank>
-                                <img src="img/sponsors/aTalent logo with transparent background LARGE.png">
-                            </a>
-                        </div>
-                        <div class="grid__item one-half" style="padding-top:
-                            20px;">
-                            <a href="http://www.dreambroker.com/" target=_blank>
-                                <img src="img/sponsors/dreambroker.png">
-                            </a>
-                        </div>
-                        <div class="grid__item one-half" style="padding-top:
-                            20px;">
-                            <a href="http://www.taiste.fi/" target=_blank>
-                                <img src="img/sponsors/taiste_tekstilogo.png">
-                            </a>
-                            </div>
-                            <div class="grid__item one-half" style="padding-top:
-                                20px;">
-                                <a href="http://www.tek.fi/" target=_blank>
-                                    <img src="img/sponsors/tek_logo.png">
-                                </a>
-                                </div>
-                                <div class="grid__item one-half" style="padding-top:
-                                    20px;">
-                                    <a href="http://www.tivia.fi/" target=_blank>
-                                        <img src="img/sponsors/TIVIA_logo_K_rgb.png">
-                                    </a>
-                                    </div>
-                                    <div class="grid__item one-half" style="padding-top:
-                                        20px;">
-                                        <a href="http://vector.digit.fi/" target=_blank>
-                                            <img src="img/sponsors/Vector_Logo.png">
-                                        </a>
-                                        </div>
-                                        <div class="grid__item one-half" style="padding-top:
-                                            20px;">
-                                            <a href="http://www.vincit.fi/" target=_blank>
-                                                <img src="img/sponsors/vincit_logo_red.jpg">
-                                            </a>
-                                            </div>
-                        </div>
-                        <!--br>
-                        <h3><i class="fa fa-certificate fa-lg fa-spin" style="color: silver;"></i> Hopeasponsorit</h3>
-                        <br>
-                        <div class="grid">
-                            <div class="grid__item one-half">
-                                
-                            </div>
-                        </div>
-                        <br>
-                        <h3><i class="fa fa-certificate fa-lg fa-spin" style="color: #CD7F32;"></i> Pronssisponsorit</h3>
-                        <br>
-                        <div class="grid">
-                            <div class="grid__item one-third">
-                                
-                            </div>
-                        </div-->
-                    </section>
-
-                    <section class="contact" id="contact">
-                        <h2>Contact</h2>
-                        <p>
-						Questions, current matters &amp; feedback:<br>
-						<br>
-						Valtteri Karttunen<br>
-						vpj-asteriski@utu.fi<br>
-                        </p>
-                    </section>
-
-                    <section class="archive" id="archive">
-                        <h2>Home pages of previous events</h2>
-                        <ul>
-                            <li><a href="/archive/2014/">2014</a></li>
-							<li><a href="/archive/2015/">2015</a></li>
-							<li><a href="/archive/2016/">2016</a></li>
-                        </ul>
-                    </section>
-                </div>
-
-                <footer>
-                    <span><a href="http://asteriski.fi"><img src="img/svg/asteriski_logo.svg" alt="Asteriski Ry" width='300px'></a></span>
-                    <span><a href="http://digit.fi"><img src="img/svg/digit_logo.svg" alt="Digit Ry"></a></span>
-                    <span><a href="http://date.abo.fi/"><img src="img/svg/date_logo.svg" alt="Date Ry"></a></span>
-                    <span><a href="http://www.infa.fi/home/"><img src="img/svg/infa_logo.svg" alt="Infa Ry"></a></span>
-                    <span><a href="http://tuky.fi/jaostot-ja-toimijaryhmat/ainejarjestot/tukydata/"><img src="img/svg/tukydata_logo.svg" alt="Tuky Data Ry"></a></span>
-                </footer>
-            </div>
-
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-            <script src="js/pluginsck.min.js"></script>
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzi2RGjF-t87ysBjCpWDs6YuR384Cn48w&sensor=false"></script>
-            <script src="js/mainck.min.js"></script>
-            <!-- <script src="js/main.js"></script> -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
 </html>
