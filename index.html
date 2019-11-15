@@ -16,9 +16,9 @@
     <title>Synergia Turku 2019</title>
     <meta name="description" content="Synergia Turku on korkeakouluopiskelijoille suunnattu IT-seminaaritapahtuma, joka kerää alan ammattilaisia puhumaan alan trendeistä. Vuonna 2019 teemana on TEKOÄLY.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preload" href="js/vendor/particles.min.js" as="script" />
     <link rel="preload" href="js/script.js?v=1.008" as="script" />
     <link rel="preload" href="css/style.css?v=1.009" as="style" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <meta property="og:title" content="Synergia Turku 2019" />
     <meta property="og:type" content="website" />
@@ -50,41 +50,37 @@
 <body>
     <!-- <body> -->
     <div class="landing">
-        <div class="landing-gradient">&nbsp;</div>
-        <h1 class="heading__h1">Synergia Turku 2019</h1>
-        <h2 id="landing-year" class="landing-title">30v</h2>
-        <h2 id="landing-title" class="landing-title">Synergia</h2>
-        <h2 id="landing-date" class="landing-title">20.11.19</h2>
-        <svg class="rotate synergia-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 185">
-            <circle cx="92.5" cy="92.5" r="46" clip-rule="evenodd" fill="none" stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" />
-            <path d="M92.5 2.9c-3.9 0-7.8.3-11.7.9-.5 7.8-1 14.2-1.4 20.5-4.9.9-9.6 2.4-14.2 4.4-3.9-5-7.9-10.1-12.8-16.3C47.3 15 42.5 18 38 21.5c3.5 7.1 6.3 12.8 9 18.6-3.8 3.3-7.2 6.9-10.1 10.9-5.9-2.5-11.9-4.9-19.2-7.8-3.1 4.7-5.8 9.8-8 15 6.5 4.4 11.8 8 17.1 11.6-1.6 4.7-2.8 9.6-3.4 14.5-6.3.9-12.6 1.8-20.4 2.9l-.3 5.4c0 3.9.3 7.8.9 11.7 7.8.5 14.2 1 20.5 1.4.9 4.9 2.4 9.6 4.4 14.2-5 3.9-10.1 7.9-16.3 12.8 2.6 5.1 5.6 9.9 9.1 14.4 7.1-3.5 12.8-6.3 18.6-9 3.3 3.8 6.9 7.2 10.9 10.1-2.4 5.9-4.8 11.9-7.7 19.2 4.7 3.1 9.8 5.8 15 8 4.4-6.5 8-11.8 11.6-17.1 4.7 1.6 9.6 2.8 14.5 3.4.9 6.3 1.8 12.6 2.9 20.4l5.4.3c3.9 0 7.8-.3 11.7-.9.5-7.8 1-14.2 1.4-20.5 4.9-.9 9.6-2.4 14.2-4.4 4 5 7.9 10.1 12.8 16.3 5.1-2.6 9.9-5.6 14.4-9.1-3.5-7.1-6.3-12.8-9-18.6 3.8-3.3 7.2-6.9 10.1-10.9 5.9 2.4 11.9 4.8 19.2 7.7 3.1-4.7 5.8-9.8 8-15-6.5-4.4-11.8-8-17.1-11.6 1.6-4.7 2.8-9.6 3.4-14.5 6.3-.9 12.6-1.8 20.4-2.9l.3-5.4c0-3.9-.3-7.8-.9-11.7-7.8-.5-14.2-1-20.5-1.4-.9-4.9-2.4-9.6-4.4-14.2 5-4 10.1-7.9 16.3-12.8-2.6-5.1-5.6-9.9-9.1-14.4-7.1 3.5-12.8 6.3-18.6 9-3.3-3.8-6.9-7.2-10.9-10.1 2.4-5.9 4.8-11.9 7.7-19.2-4.7-3.1-9.8-5.8-15-8-4.4 6.5-8 11.8-11.6 17.1-4.7-1.6-9.6-2.8-14.5-3.4-.9-6.3-1.8-12.6-2.9-20.4-1.8-.1-3.6-.2-5.4-.2h0z" fill="none" stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" /></svg>
-    </div>
-    <div id="headerFix">
-        <div class="nav">
-            <a href="#synergia">SYNERGIA</a>
-            <a href="#aikataulu">AIKATAULU</a>
-            <a href="#yhteistyossa">YHTEISTYÖSSÄ</a>
-            <a href="#jarjestajat">JÄRJESTÄJÄT</a>
+        <!-- <div class="landing-gradient">&nbsp;</div> -->
+        <h1 class="h1-landing">Synergia Turku 2019</h1>
+        <div class="landing-title">
+            <h2 class="h2-landing">Synergia</h2>
+            <h2 class="h2-landing">20.11.19</h2>
         </div>
+        <div class="synergia-gear-container"><svg class="rotate synergia-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 185">
+                <circle cx="92.5" cy="92.5" r="46" clip-rule="evenodd" fill="none" stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" />
+                <path d="M92.5 2.9c-3.9 0-7.8.3-11.7.9-.5 7.8-1 14.2-1.4 20.5-4.9.9-9.6 2.4-14.2 4.4-3.9-5-7.9-10.1-12.8-16.3C47.3 15 42.5 18 38 21.5c3.5 7.1 6.3 12.8 9 18.6-3.8 3.3-7.2 6.9-10.1 10.9-5.9-2.5-11.9-4.9-19.2-7.8-3.1 4.7-5.8 9.8-8 15 6.5 4.4 11.8 8 17.1 11.6-1.6 4.7-2.8 9.6-3.4 14.5-6.3.9-12.6 1.8-20.4 2.9l-.3 5.4c0 3.9.3 7.8.9 11.7 7.8.5 14.2 1 20.5 1.4.9 4.9 2.4 9.6 4.4 14.2-5 3.9-10.1 7.9-16.3 12.8 2.6 5.1 5.6 9.9 9.1 14.4 7.1-3.5 12.8-6.3 18.6-9 3.3 3.8 6.9 7.2 10.9 10.1-2.4 5.9-4.8 11.9-7.7 19.2 4.7 3.1 9.8 5.8 15 8 4.4-6.5 8-11.8 11.6-17.1 4.7 1.6 9.6 2.8 14.5 3.4.9 6.3 1.8 12.6 2.9 20.4l5.4.3c3.9 0 7.8-.3 11.7-.9.5-7.8 1-14.2 1.4-20.5 4.9-.9 9.6-2.4 14.2-4.4 4 5 7.9 10.1 12.8 16.3 5.1-2.6 9.9-5.6 14.4-9.1-3.5-7.1-6.3-12.8-9-18.6 3.8-3.3 7.2-6.9 10.1-10.9 5.9 2.4 11.9 4.8 19.2 7.7 3.1-4.7 5.8-9.8 8-15-6.5-4.4-11.8-8-17.1-11.6 1.6-4.7 2.8-9.6 3.4-14.5 6.3-.9 12.6-1.8 20.4-2.9l.3-5.4c0-3.9-.3-7.8-.9-11.7-7.8-.5-14.2-1-20.5-1.4-.9-4.9-2.4-9.6-4.4-14.2 5-4 10.1-7.9 16.3-12.8-2.6-5.1-5.6-9.9-9.1-14.4-7.1 3.5-12.8 6.3-18.6 9-3.3-3.8-6.9-7.2-10.9-10.1 2.4-5.9 4.8-11.9 7.7-19.2-4.7-3.1-9.8-5.8-15-8-4.4 6.5-8 11.8-11.6 17.1-4.7-1.6-9.6-2.8-14.5-3.4-.9-6.3-1.8-12.6-2.9-20.4-1.8-.1-3.6-.2-5.4-.2h0z" fill="none" stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" /></svg></div>
+
+
     </div>
     <div class="header">
         <div class="header-content">
-            <div class="header-content-title">
+            <a href="/" class="header-content-title">
                 <svg class="rotate header-content-title-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 185">
                     <circle cx="92.5" cy="92.5" r="46" clip-rule="evenodd" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
                     <path d="M92.5 2.9c-3.9 0-7.8.3-11.7.9-.5 7.8-1 14.2-1.4 20.5-4.9.9-9.6 2.4-14.2 4.4-3.9-5-7.9-10.1-12.8-16.3C47.3 15 42.5 18 38 21.5c3.5 7.1 6.3 12.8 9 18.6-3.8 3.3-7.2 6.9-10.1 10.9-5.9-2.5-11.9-4.9-19.2-7.8-3.1 4.7-5.8 9.8-8 15 6.5 4.4 11.8 8 17.1 11.6-1.6 4.7-2.8 9.6-3.4 14.5-6.3.9-12.6 1.8-20.4 2.9l-.3 5.4c0 3.9.3 7.8.9 11.7 7.8.5 14.2 1 20.5 1.4.9 4.9 2.4 9.6 4.4 14.2-5 3.9-10.1 7.9-16.3 12.8 2.6 5.1 5.6 9.9 9.1 14.4 7.1-3.5 12.8-6.3 18.6-9 3.3 3.8 6.9 7.2 10.9 10.1-2.4 5.9-4.8 11.9-7.7 19.2 4.7 3.1 9.8 5.8 15 8 4.4-6.5 8-11.8 11.6-17.1 4.7 1.6 9.6 2.8 14.5 3.4.9 6.3 1.8 12.6 2.9 20.4l5.4.3c3.9 0 7.8-.3 11.7-.9.5-7.8 1-14.2 1.4-20.5 4.9-.9 9.6-2.4 14.2-4.4 4 5 7.9 10.1 12.8 16.3 5.1-2.6 9.9-5.6 14.4-9.1-3.5-7.1-6.3-12.8-9-18.6 3.8-3.3 7.2-6.9 10.1-10.9 5.9 2.4 11.9 4.8 19.2 7.7 3.1-4.7 5.8-9.8 8-15-6.5-4.4-11.8-8-17.1-11.6 1.6-4.7 2.8-9.6 3.4-14.5 6.3-.9 12.6-1.8 20.4-2.9l.3-5.4c0-3.9-.3-7.8-.9-11.7-7.8-.5-14.2-1-20.5-1.4-.9-4.9-2.4-9.6-4.4-14.2 5-4 10.1-7.9 16.3-12.8-2.6-5.1-5.6-9.9-9.1-14.4-7.1 3.5-12.8 6.3-18.6 9-3.3-3.8-6.9-7.2-10.9-10.1 2.4-5.9 4.8-11.9 7.7-19.2-4.7-3.1-9.8-5.8-15-8-4.4 6.5-8 11.8-11.6 17.1-4.7-1.6-9.6-2.8-14.5-3.4-.9-6.3-1.8-12.6-2.9-20.4-1.8-.1-3.6-.2-5.4-.2h0z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
                 </svg>
-                <a href="">
+                <div>
                     <h1>Synergia</h1>
-                </a>
-                <h2>Turku 2019</h2>
-            </div>
+                    <h2>Turku 2019</h2>
+                </div>
 
-            <div class="nav">
+            </a>
+
+            <div id="nav" class="nav">
                 <a href="#synergia">SYNERGIA</a>
                 <a href="#aikataulu">AIKATAULU</a>
                 <a href="#yhteistyossa">YHTEISTYÖSSÄ</a>
-                <a href="#jarjestajat">JÄRJESTÄJÄT</a>
+                <a href="#hostInfo">JÄRJESTÄJÄT</a>
             </div>
         </div>
 
@@ -94,45 +90,48 @@
         <div class="body-gradient">
 
             <div class="body-info card">
-                <h1 id="synergia">SYNERGIA 30-VUOTTA</h1>
-                <p>Synergia Turku on vuosittain Turussa pidettävä korkeakouluopiskelijoille suunnattu IT-seminaari, joka kerää IT-alan ammattilaisia keskustelemaan alan kuumimmista trendeistä. Tapahtuma on järjestetty yhteensä 29 kertaa, joista viimeisin vuonna 2017. Kyseessä onkin pisimpään yhtäjaksoisesti järjestetty IT-alan opiskelijatapahtuma Suomessa. Vuonna 2018 tapahtumaa ei järjestetty, sillä Turku houstasi <a href="https://atk-ytp.org/" target="_blank">ATK-yhteis­toiminta­päivät</a>.</p>
-                <br>
-                <p>Tänä vuonna Synergia palaa vuoden tauolta ja viettää kolmekymppisiään. Onkin aika nousta tuhkista, kerätä alan nykyiset ja tulevat ammattilaiset yhteen, ja päästä Synergia-henkisesti luomaan yhteisvaikutusta timanttisten verkostojen avulla! Tänä vuonna juhlavuoden teemana on alaa yhäkin murtava tekoäly. Tapahtuman paikkana toimii <a href="https://www.google.com/maps/place/Turku+School+of+Economics/@60.4546098,22.2863868,17z/data=!3m1!4b1!4m5!3m4!1s0x468c76ef1c548ec9:0x68a554034c35053f!8m2!3d60.4546097!4d22.2885755" target="_blank">Turun kauppakorkeakoulu</a>.</p>
-                <br>
-                <!-- <video style="margin-bottom: 20px;" width="100%" controls poster="/img/synergiaThumbnail.jpg">
-                    <source src="/video/promovideo.mp4" type="video/mp4">
-                </video> -->
-                <h1>AIKAISEMMAT VUODET</h1>
+                <h1 class="h1-card" id="synergia">Synergia <nobr>30-vuotta</nobr>
+                </h1>
+                <p class="p-paragraph">Synergia Turku on vuosi&shy;ttain Turussa pidet&shy;tävä korkea&shy;koulu&shy;opis&shy;keli&shy;joille suun&shy;nattu IT-semi&shy;naari, joka ke&shy;rää IT-alan ammat&shy;ti&shy;lai&shy;sia keskus&shy;te&shy;le&shy;maan alan kuumim&shy;mista tren&shy;deistä. Tapah&shy;tuma on järjes&shy;tet&shy;ty yh&shy;teen&shy;sä 29 kertaa, jois&shy;ta vii&shy;mei&shy;sin vuonna 2017. Ky&shy;sees&shy;sä onkin pisim&shy;pään yhtä&shy;jaksoi&shy;sesti jär&shy;jes&shy;tet&shy;ty IT-alan opis&shy;keli&shy;jata&shy;pahtuma Suomessa. Vuonna 2018 tapah&shy;tumaa ei järjes&shy;tet&shy;ty, sillä Turku houstasi <a href="https://atk-ytp.org/" target="_blank">ATK-yhteis­&shy;toiminta&shy;­päivät</a>.</p>
+
+                <p class="p-paragraph">Tänä vuonna Synergia pa&shy;laa vuo&shy;den tauolta ja viet&shy;tää kolme&shy;kymppi&shy;siään. Onkin aika nousta tuhkista, kerätä alan nykyiset ja tulevat ammat&shy;ti&shy;lai&shy;set yhteen, ja päästä Synergia-henki&shy;sesti luomaan yhteis&shy;vai&shy;ku&shy;tusta timant&shy;tis&shy;ten verkos&shy;to&shy;jen avulla! Tänä vuonna juhla&shy;vuo&shy;den teemana on alaa yhäkin murtava teko&shy;äly. Tapah&shy;tu&shy;man paik&shy;kana toimii <a href="https://www.google.com/maps/place/Turku+School+of+Economics/@60.4546098,22.2863868,17z/data=!3m1!4b1!4m5!3m4!1s0x468c76ef1c548ec9:0x68a554034c35053f!8m2!3d60.4546097!4d22.2885755" target="_blank">Turun kauppakorkeakoulu</a>.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1yafui4XsiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+                <h1 class="h1-card">Aikaisemmat vuodet</h1>
                 <div id="archiveLinks">
                     <div class="archiveLink">
                         <a href="http://www.synergiaturku.fi/archive/2017/" target="_blank"><img src="img/archive/Synergia17.jpg" class="archiveImage">
+                            <p>2017</p>
                         </a>
-                        <p>2017</p>
+
                     </div>
 
                     <div class="archiveLink">
                         <a href="http://www.synergiaturku.fi/archive/2016/" target="_blank"><img src="img/archive/Synergia16.jpg" class="archiveImage">
+                            <p>2016</p>
                         </a>
-                        <p>2016</p>
                     </div>
 
                     <div class="archiveLink">
                         <a href="http://www.synergiaturku.fi/archive/2015/" target="_blank""><img src=" img/archive/Synergia15.jpg" class="archiveImage">
+                            <p>2015</p>
                         </a>
-                        <p>2015</p>
                     </div>
 
 
                     <div class="archiveLink">
                         <a href="http://www.synergiaturku.fi/archive/2014/" target="_blank"><img src="img/archive/Synergia14.jpg" class="archiveImage">
+                            <p>2014</p>
                         </a>
-                        <p>2014</p>
                     </div>
 
                 </div>
             </div>
             <div class="body-time card">
-                <h1 id="aikataulu">AIKATAULU</h1>
+                <h1 class="h1-card" id="aikataulu">Aikataulu</h1>
                 <table class="timetable">
                     <tbody>
                         <tr>
@@ -143,45 +142,45 @@
                         </tr>
                         <tr>
                             <td>12:00</td>
-                            <td>Toimikunnan tervehdys</td>
-                            <td>Avajaispuhe</td>
-                            <td class=location>Mercatori</td>
+                            <td>Toimi&shy;kunnan ter&shy;veh&shy;dys</td>
+                            <td>Ava&shy;jais&shy;puhe</td>
+                            <td class=location>Merca&shy;tori</td>
                         </tr>
                         <tr>
                             <td>12:15</td>
-                            <td>Luento: <b>Reaktor</b></td>
+                            <td>Luento: <strong>Reaktor</strong></td>
                             <td>TBA</td>
-                            <td class=location>Osuuskauppasali</td>
+                            <td class=location>Osuus&shy;kaup&shy;pa&shy;sali</td>
                         </tr>
                         <tr>
-                            <td>13<b>-</b>15</td>
-                            <td>CV-Klinikka: <b>TEK</b></td>
+                            <td>13<strong>-</strong>15</td>
+                            <td>CV-Klinikka:<strong>TEK</strong></td>
                             <td>CV:n tehostus</td>
                             <td class=location>Huone ls08</td>
                         </tr>
                         <tr>
                             <td>13:15</td>
-                            <td>Luento: <b>VTT</b></td>
+                            <td>Luento: <strong>VTT</strong></td>
                             <td>TBA</td>
-                            <td class=location>Osuuskauppasali</td>
+                            <td class=location>Osuus&shy;kaup&shy;pa&shy;sali</td>
                         </tr>
                         <tr>
                             <td>14:15</td>
-                            <td>Workshop: <b style="padding: 0;">Valohai</b></td>
+                            <td>Workshop: <b style="padding: 0;">Valohai</strong></td>
                             <td>TBA</td>
                             <td class=location>Huone ls07</td>
                         </tr>
                         <tr>
                             <td>15:15</td>
-                            <td>Luento: <b>Google Cloud</b></td>
-                            <td>Tekoäly muuttaa toimintatapojamme</td>
-                            <td class=location>Osuuskauppasali</td>
+                            <td>Luento: <strong>Google Cloud</strong></td>
+                            <td>Tekoäly muuttaa toiminta&shy;tapojamme</td>
+                            <td class=location>Osuus&shy;kaup&shy;pa&shy;sali</td>
                         </tr>
                         <tr>
                             <td>16:15</td>
-                            <td>Luento: <b>MarshallAI</b></td>
+                            <td>Luento: <strong>MarshallAI</strong></td>
                             <td>TBA</td>
-                            <td class=location>Osuuskauppasali</td>
+                            <td class=location>Osuus&shy;kaup&shy;pa&shy;sali</td>
                         </tr>
                         <tr>
                             <td>18:00</td>
@@ -192,101 +191,111 @@
                     </tbody>
                 </table>
                 <div id="aikatauluMobile">
-                    <h2>12:00</h2>
-                    <p>Toimikunnan tervehdys</p>
+                    <p class="p-timetable-time">12:00</p>
+                    <h3 class="h3-timetable">Toimikunnan tervehdys</h3>
                     <p>"Avajaispuhe"</p>
                     <p class=location>Mercatori</p>
-                    <h2>12:15</h2>
-                    <p>Luento: <b>Reaktor</b></p>
+                    <p class="p-timetable-time">12:15</p>
+                    <h3 class="h3-timetable">Luento: <strong>Reaktor</strong></h3>
                     <p>"TBA"</p>
-                    <p class=location>Osuuskauppasali</p>
-                    <h2>13<b>-</b>15</h2>
-                    <p>CV-Klinikka: <b>TEK</b></p>
+                    <p class=location>Osuus&shy;kaup&shy;pa&shy;sali</p>
+                    <p class="p-timetable-time">13<strong>-</strong>15</p>
+                    <h3 class="h3-timetable">CV-Klinikka:<strong>TEK</strong></h3>
                     <p>CV:n tehostus</p>
                     <p class=location>Huone ls08</p>
-                    <h2>13:15</h2>
-                    <p>Luento: <b>VTT</b></p>
+                    <p class="p-timetable-time">13:15</p>
+                    <h3 class="h3-timetable">Luento: <strong>VTT</strong></h3>
                     <p>"TBA"</p>
-                    <p class=location>Osuuskauppasali</p>
-                    <h2>14:15</h2>
-                    <p>Workshop: <b>Valohai</b></p>
+                    <p class=location>Osuus&shy;kaup&shy;pa&shy;sali</p>
+                    <p class="p-timetable-time">14:15</p>
+                    <h3 class="h3-timetable">Workshop: <strong>Valohai</strong></h3>
                     <p>"TBA"</p>
                     <p class=location>Huone ls07</p>
-                    <h2>15:15</h2>
-                    <p>Luento: <b>Google Cloud</b></p>
+                    <p class="p-timetable-time">15:15</p>
+                    <h3 class="h3-timetable">Luento: <strong>Google Cloud</strong></h3>
                     <p>"Tekoäly muuttaa toimintatapojamme"</p>
-                    <p class=location>Osuuskauppasali</p>
-                    <h2>16:15</h2>
-                    <p>Luento: <b>MarshallAI</b></p>
+                    <p class=location>Osuus&shy;kaup&shy;pa&shy;sali</p>
+                    <p class="p-timetable-time">16:15</p>
+                    <h3 class="h3-timetable">Luento: <strong>MarshallAI</strong></h3>
                     <p>"TBA"</p>
-                    <p class=location>Osuuskauppasali</p>
-                    <h2>18:00</h2>
-                    <p>Jatkobileet</p>
+                    <p class=location>Osuus&shy;kaup&shy;pa&shy;sali</p>
+                    <p class="p-timetable-time">18:00</p>
+                    <h3 class="h3-timetable">Jatkobileet</h3>
                     <p>"Virkistäytyminen"</p>
                     <p class=location><a href="https://goo.gl/maps/RmT8dCLiptVcdnY18" target="_blank">TuKY Parkki</a> & <a href="https://goo.gl/maps/yCWGV3MHahFjf1H99">Heidi's Bier Bar</a></p>
                 </div>
-                
+
 
                 <!-- <div id="map"></div> -->
             </div>
             <div class="body-partners card">
-                <h1 id="yhteistyossa">YHTEISTYÖSSÄ</h1>
+                <h1 class="h1-card" id="yhteistyossa">Yhteistyössä</h1>
                 <div id="companies">
-                    <div class="body-partners-speakers"></div>
+                    <div class="body-partners-speakers">
+                        <div class="company card">
+                            <!-- <h2>Company</h2> -->
+                            <div class="company-content">
+                                <img src="https://www.vincit.fi/wp-content/themes/vincit/images/vincit-logo_red.svg" class="company-content-logo">
+                                <div class="company-content-text">
+                                    <h2>Topic</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac euismod augue. Integer tristique dui a velit condimentum, eu rhoncus velit commodo. Ut commodo mi ac interdum ullamcorper. Aliquam pharetra risus sit amet tortor tempus, eu lobortis nibh facilisis. Pellentesque fermentum aliquet diam in aliquet. Integer viverra dignissim eleifend. Praesent tristique facilisis magna vel lacinia. </p>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1518566338220-afbbf0cc5093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1304&q=80" class="company-content-avatar">
+                            </div>
+                        </div>
+                        <div class="company2 card">
+                            <!-- <h2>Company</h2> -->
+                            <div class="company-content">
+                                <img src="https://images.unsplash.com/photo-1518566338220-afbbf0cc5093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1304&q=80" class="company-content-avatar">
+                                <img src="https://www.vincit.fi/wp-content/themes/vincit/images/vincit-logo_red.svg" class="company-content-logo">
+                            </div>
+                        </div>
+                        <div class="company card">
+                            <!-- <h2>Company</h2> -->
+                            <div class="company-content">
+                                <img src="https://www.vincit.fi/wp-content/themes/vincit/images/vincit-logo_red.svg" class="company-content-logo">
+                                <img src="https://images.unsplash.com/photo-1518566338220-afbbf0cc5093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1304&q=80" class="company-content-avatar">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="body-partners-logoGrid">
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.documenthouse.fi/" target="_blank"><img src="img/partners/documenthouse.png" title="Document House" alt="Document House" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.cerion.fi/" target="_blank"><img src="img/partners/cerion.png" title="Cerion" alt="Cerion" class="partnersLogo"></a>
-                        </div>
 
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.if.fi/" target="_blank"><img src="img/partners/if.svg" title="If Vakuutusyhtiö" alt="If Vakuutusyhtiö" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://marshallai.com/" target="_blank"><img src="img/partners/marshallai.svg" title="MarshallAI" alt="MarshallAI" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.meyerturku.fi/" target="_blank"><img src="img/partners/meyer.png" title="Meyer Turku" alt="Meyer Turku" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.mostdigital.fi/" target="_blank"><img src="img/partners/mostdigital.png" title="MOST Digital" alt="MOST Digital" class="partnersLogo .mostFix"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.reaktor.com/" target="_blank"><img src="img/partners/reaktor.svg" title="Reaktor" alt="Reaktor" class="partnersLogo blackSVG"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.sofokus.com/" target="_blank"><img src="img/partners/sofokus.svg" title="Sofokus" alt="Sofokus" class="partnersLogo blackSVG"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.taiste.fi/" target="_blank"><img src="img/partners/taiste.svg" title="taiste" alt="taiste" class="partnersLogo blackSVG"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.tek.fi/" target="_blank"><img src="img/partners/tek2.svg" title="TEK" alt="Tekniikan Akateemiset" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://vaadin.com/" target="_blank"><img src="img/partners/vaadin.svg" title="Vaadin" alt="Vaadin" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://valohai.com/" target="_blank"><img src="img/partners/valohai.svg" title="VALOHAI" alt="VALOHAI" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.visma.fi/ura/" target="_blank"><img src="img/partners/visma.svg" title="Visma Financial Solutions" alt="Visma Financial Solutions" class="partnersLogo"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.vtt.fi/" target="_blank"><img src="img/partners/vtt.svg" title="VTT" alt="VTT" class="partnersLogo vttFix"></a>
-                        </div>
-                        <div class=body-partners-logoGrid-logo>
-                            <a href="https://www.wapice.com/" target="_blank"><img src="img/partners/wapice.png" title="Wapice" alt="Wapice" class="partnersLogo"></a>
-                        </div>
+                        <a href="https://www.documenthouse.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/documenthouse.png" title="Document House" alt="Document House" class="partnersLogo"></a>
+
+                        <a href="https://www.cerion.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/cerion.png" title="Cerion" alt="Cerion" class="partnersLogo"></a>
+                        <a href="https://www.if.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/if.svg" title="If Vakuutusyhtiö" alt="If Vakuutusyhtiö" class="partnersLogo"></a>
+
+                        <a href="https://marshallai.com/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/marshallai.svg" title="MarshallAI" alt="MarshallAI" class="partnersLogo"></a>
+
+                        <a href="https://www.meyerturku.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/meyer.png" title="Meyer Turku" alt="Meyer Turku" class="partnersLogo"></a>
+
+                        <a href="https://www.mostdigital.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/mostdigital.png" title="MOST Digital" alt="MOST Digital" class="partnersLogo .mostFix"></a>
+
+                        <a href="https://www.reaktor.com/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/reaktor.svg" title="Reaktor" alt="Reaktor" class="partnersLogo blackSVG"></a>
+
+                        <a href="https://www.sofokus.com/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/sofokus.svg" title="Sofokus" alt="Sofokus" class="partnersLogo blackSVG"></a>
+
+                        <a href="https://www.taiste.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/taiste.svg" title="taiste" alt="taiste" class="partnersLogo blackSVG"></a>
+
+                        <a href="https://www.tek.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/tek2.svg" title="TEK" alt="Tekniikan Akateemiset" class="partnersLogo"></a>
+
+                        <a href="https://vaadin.com/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/vaadin.svg" title="Vaadin" alt="Vaadin" class="partnersLogo"></a>
+
+                        <a href="https://valohai.com/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/valohai.svg" title="VALOHAI" alt="VALOHAI" class="partnersLogo"></a>
+
+                        <a href="https://www.visma.fi/ura/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/visma.svg" title="Visma Financial Solutions" alt="Visma Financial Solutions" class="partnersLogo"></a>
+
+                        <a href="https://www.vtt.fi/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/vtt.svg" title="VTT" alt="VTT" class="partnersLogo vttFix"></a>
+
+                        <a href="https://www.wapice.com/" class=body-partners-logoGrid-logo target="_blank"><img src="img/partners/wapice.png" title="Wapice" alt="Wapice" class="partnersLogo"></a>
+
                     </div>
                 </div>
             </div>
             <div class="body-hosts card">
-                <h1 id="hostInfo">JÄRJESTÄJÄT</h1>
-                <p>Synergia Turun järjestäjänä toimivat Turun yliopiston ja Åbo Akademin tietojenkäsittelytieteiden, tietotekniikan, tietoliikennetekniikan ja elektroniikan diplomi-insinööriopiskelijoiden sekä Turun kauppakorkeakoulun tietojärjestelmätieteen opiskelijoiden ainejärjestöt Asteriski ry, Digit ry, TuKYData ry, Infå vid Åbo Akademi r.f. ja Datateknologerna vid Åbo Akademi r.f.</p>
+                <h1 class="h1-card" id="hostInfo">Järjestäjät</h1>
+                <p>Synergia Turun jär&shy;jes&shy;tä&shy;jinä toimivat Turun yliopiston ja Åbo Akademin tietojen&shy;käsit&shy;te&shy;ly&shy;tie&shy;teiden, tieto&shy;tek&shy;nii&shy;kan, tieto&shy;lii&shy;ken&shy;ne&shy;tek&shy;nii&shy;kan ja elek&shy;tro&shy;nii&shy;kan diplomi-insi&shy;nöö&shy;ri&shy;opis&shy;ke&shy;li&shy;joi&shy;den sekä Turun kauppa&shy;kor&shy;kea&shy;kou&shy;lun tieto&shy;jär&shy;jes&shy;tel&shy;mä&shy;tie&shy;teen opis&shy;ke&shy;li&shy;joi&shy;den aine&shy;järjestöt Asteriski ry, Digit ry, TuKYData ry, Infå vid Åbo Akademi r.f. ja Datateknologerna vid Åbo Akademi r.f.</p>
             </div>
             <div id="jarjestajat" class="">
                 <div class="host">
@@ -320,7 +329,51 @@
         </a>
         <!-- <p id="someText">Synergia Turku</p> -->
     </div>
+    <a href="/#nav" class="nav-mobileHome">
+        <svg class="rotate header-content-title-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 185">
+            <path d="M182 98l.3-5.4c0-3.9-.3-7.8-.9-11.7-7.8-.5-14.2-1-20.5-1.4-.9-4.9-2.4-9.6-4.4-14.2 5-4 10.1-7.9 16.3-12.8-2.6-5.1-5.6-9.9-9.1-14.4-7.1 3.5-12.8 6.3-18.6 9-3.3-3.8-6.9-7.2-10.9-10.1 2.4-5.9 4.8-11.9 7.7-19.2-4.7-3.1-9.8-5.8-15-8-4.4 6.5-8 11.8-11.6 17.1-4.7-1.6-9.6-2.8-14.5-3.4-.9-6.3-1.8-12.6-2.9-20.4-1.8-.1-3.6-.2-5.4-.2 0 0 0 0 0 0-3.9 0-7.8.3-11.7.9-.5 7.8-1 14.2-1.4 20.5-4.9.9-9.6 2.4-14.2 4.4-3.9-5-7.9-10.1-12.8-16.3C47.3 15 42.5 18 38 21.5c3.5 7.1 6.3 12.8 9 18.6-3.8 3.3-7.2 6.9-10.1 10.9-5.9-2.5-11.9-4.9-19.2-7.8-3.1 4.7-5.8 9.8-8 15 6.5 4.4 11.8 8 17.1 11.6-1.6 4.7-2.8 9.6-3.4 14.5-6.3.9-12.6 1.8-20.4 2.9l-.3 5.4c0 3.9.3 7.8.9 11.7 7.8.5 14.2 1 20.5 1.4.9 4.9 2.4 9.6 4.4 14.2-5 3.9-10.1 7.9-16.3 12.8 2.6 5.1 5.6 9.9 9.1 14.4 7.1-3.5 12.8-6.3 18.6-9 3.3 3.8 6.9 7.2 10.9 10.1-2.4 5.9-4.8 11.9-7.7 19.2 4.7 3.1 9.8 5.8 15 8 4.4-6.5 8-11.8 11.6-17.1 4.7 1.6 9.6 2.8 14.5 3.4.9 6.3 1.8 12.6 2.9 20.4l5.4.3c3.9 0 7.8-.3 11.7-.9.5-7.8 1-14.2 1.4-20.5 4.9-.9 9.6-2.4 14.2-4.4 4 5 7.9 10.1 12.8 16.3 5.1-2.6 9.9-5.6 14.4-9.1-3.5-7.1-6.3-12.8-9-18.6 3.8-3.3 7.2-6.9 10.1-10.9 5.9 2.4 11.9 4.8 19.2 7.7 3.1-4.7 5.8-9.8 8-15-6.5-4.4-11.8-8-17.1-11.6 1.6-4.7 2.8-9.6 3.4-14.5 6.3-.9 12.6-1.8 20.4-2.9zm-89.5 40.5c-25.4 0-46-20.6-46-46s20.6-46 46-46 46 20.6 46 46-20.6 46-46 46z" fill="#460b3b" stroke="#f3f3f3" stroke-width="1" stroke-linecap="round" /></svg>
+
+
+    </a>
+
 </body>
 <!-- <footer></footer> -->
+<script>
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]').click(function (event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 100
+                    }, 1000, function () {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        }
+                    });
+                }
+            }
+        });
+    // The function actually applying the offset
+
+</script>
 
 </html>
